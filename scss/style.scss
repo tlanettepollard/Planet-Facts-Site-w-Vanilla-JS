@@ -1,2 +1,6 @@
 @use 'custom';
 
+* {
+    box-sizing: border-box;
+    outline: 1px white solid;
+}

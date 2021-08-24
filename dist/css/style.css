@@ -11267,4 +11267,8 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+* {
+  box-sizing: border-box;
+  outline: 1px white solid;
 }/*# sourceMappingURL=style.css.map */
