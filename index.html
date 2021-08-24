@@ -14,13 +14,13 @@
 <body class="bg-primary text-white">
   <header>
     <nav class="navbar navbar-expand-md bg-transparent">
-      <div class="container-fluid">
+      <div class="container-fluid flex-md-column flex-lg-row">
         <a class="navbar-brand text-uppercase text-white" href="#">The Planets</a>
         <button class="navbar-toggler" type="button" data-bs-toggler="collapse" data-bs-target="#planetToggler" aria-controls="planetToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="planetToggler">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse justify-content-lg-end" id="planetToggler">
+          <ul class="navbar-nav">
             <li class="nav-item text-uppercase">
               <a class="nav-link active text-white" aria-current="page" href="#">Mercury</a>
             </li>
@@ -50,6 +50,12 @@
       </div>
     </nav>
   </header>
+  <main>
+    <section class="upper-section">
+
+    </section>
+    <footer class="bottom-section"></footer>
+  </main>
   <h1 class="display-1">Mercury</h1>
 
   <!-- Overview Content Start -->
@@ -101,6 +107,6 @@
   Average Temp.
   430°c
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
