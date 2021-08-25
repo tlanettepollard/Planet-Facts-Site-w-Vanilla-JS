@@ -1,0 +1,13 @@
+//@use '../custom' as *;
+
+@mixin lg-breakpoint {
+    @media screen and (min-width: $bp-lg) {
+        @content;
+    }
+}
+
+@mixin xl-breakpoint {
+    @media screen and  (min-width: $bp-xl) {
+        @content;
+    }
+}

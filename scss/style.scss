@@ -1,2 +1,10 @@
 @use 'custom';
 
+// Import Components
+@use 'components/base';
+@use 'components/mixins';
+@use 'components/typography';
+
+
+// Import Sections
+@use 'sections/navbar';
