@@ -1,4 +1,27 @@
 @charset "UTF-8";
+* {
+  box-sizing: border-box;
+  outline: 1px white solid;
+}
+
+body {
+  background-image: url("/assets/background-stars.svg");
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+a {
+  color: #ffffff;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: url(/assets/icon-hamburger.svg);
+}
+
 /*!
  * Bootstrap v5.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11267,14 +11290,4 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
-}
-* {
-  box-sizing: border-box;
-  outline: 1px white solid;
-}
-
-body {
-  background-image: url("/assets/background-stars.svg");
-  background-repeat: repeat;
-  background-size: 100%;
 }/*# sourceMappingURL=style.css.map */

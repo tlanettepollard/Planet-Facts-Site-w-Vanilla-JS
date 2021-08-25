@@ -1,12 +1,2 @@
 @use 'custom';
 
-* {
-    box-sizing: border-box;
-    outline: 1px white solid;
-}
-
-body {
-    background-image: url("/assets/background-stars.svg");
-    background-repeat: repeat;
-    background-size: 100%;
-}
