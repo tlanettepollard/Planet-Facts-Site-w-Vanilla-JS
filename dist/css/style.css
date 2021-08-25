@@ -4,6 +4,10 @@
   outline: 1px white solid;
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -14,6 +18,11 @@ body {
 
 a {
   color: #ffffff;
+}
+
+.source-icon {
+  width: 12px;
+  height: 12px;
 }
 
 .navbar-toggler-icon {
