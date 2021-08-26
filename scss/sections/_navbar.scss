@@ -1,12 +1,17 @@
 @use '../custom'as *;
 //Navbar 
-.navbar-toggler-icon {
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    vertical-align: middle;
-    background-image: url(/assets/icon-hamburger.svg);
-    //background-repeat: no-repeat;
-    //background-position: center;
-    //background-size: 100%;
+.navbar {
+    border-bottom: 1px solid ($border-color .85);
+
+    .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        background-image: url(/assets/icon-hamburger.svg);
+        //background-repeat: no-repeat;
+        //background-position: center;
+        //background-size: 100%;
+
+}
 }

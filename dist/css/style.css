@@ -1,6 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap");
+/***********************/
+/***********************/
+/**************************/
 /*!
  * Bootstrap v5.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -146,7 +149,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 
 p {
@@ -1966,7 +1969,7 @@ progress {
   margin-bottom: 1rem;
   color: #212529;
   vertical-align: top;
-  border-color: #dee2e6;
+  border-color: #838391;
 }
 .table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
@@ -2170,7 +2173,7 @@ progress {
 .col-form-label-sm {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 
 .form-text {
@@ -2324,7 +2327,7 @@ progress {
 .form-control-sm {
   min-height: calc(1.5em + 0.5rem + 2px);
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   border-radius: 0.2rem;
 }
 .form-control-sm::-webkit-file-upload-button {
@@ -2445,7 +2448,7 @@ textarea.form-control-lg {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 
 .form-select-lg {
@@ -2780,7 +2783,7 @@ textarea.form-control-lg {
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   border-radius: 0.2rem;
 }
 
@@ -2821,7 +2824,7 @@ textarea.form-control-lg {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #ffffff;
   background-color: rgba(25, 135, 84, 0.9);
   border-radius: 0.25rem;
@@ -2910,7 +2913,7 @@ textarea.form-control-lg {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #ffffff;
   background-color: rgba(220, 53, 69, 0.9);
   border-radius: 0.25rem;
@@ -3480,7 +3483,7 @@ textarea.form-control-lg {
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   border-radius: 0.2rem;
 }
 
@@ -3787,7 +3790,7 @@ textarea.form-control-lg {
   display: block;
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #6c757d;
   white-space: nowrap;
 }
@@ -4864,7 +4867,7 @@ textarea.form-control-lg {
 
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 .pagination-sm .page-item:first-child .page-link {
   border-top-left-radius: 0.2rem;
@@ -5553,7 +5556,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #838391;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
@@ -5580,7 +5583,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: flex-end;
   padding: 0.75rem;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid #838391;
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
 }
@@ -5767,7 +5770,7 @@ textarea.form-control-lg {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   word-wrap: break-word;
   opacity: 0;
 }
@@ -5869,7 +5872,7 @@ textarea.form-control-lg {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   word-wrap: break-word;
   background-color: #ffffff;
   background-clip: padding-box;
@@ -6831,7 +6834,7 @@ textarea.form-control-lg {
 }
 
 .border {
-  border: 1px solid #dee2e6 !important;
+  border: 1px solid #838391 !important;
 }
 
 .border-0 {
@@ -6839,7 +6842,7 @@ textarea.form-control-lg {
 }
 
 .border-top {
-  border-top: 1px solid #dee2e6 !important;
+  border-top: 1px solid #838391 !important;
 }
 
 .border-top-0 {
@@ -6847,7 +6850,7 @@ textarea.form-control-lg {
 }
 
 .border-end {
-  border-right: 1px solid #dee2e6 !important;
+  border-right: 1px solid #838391 !important;
 }
 
 .border-end-0 {
@@ -6855,7 +6858,7 @@ textarea.form-control-lg {
 }
 
 .border-bottom {
-  border-bottom: 1px solid #dee2e6 !important;
+  border-bottom: 1px solid #838391 !important;
 }
 
 .border-bottom-0 {
@@ -6863,7 +6866,7 @@ textarea.form-control-lg {
 }
 
 .border-start {
-  border-left: 1px solid #dee2e6 !important;
+  border-left: 1px solid #838391 !important;
 }
 
 .border-start-0 {
@@ -7601,7 +7604,7 @@ textarea.form-control-lg {
 }
 
 .fs-6 {
-  font-size: 1rem !important;
+  font-size: 0.75rem !important;
 }
 
 .fst-italic {
@@ -11292,7 +11295,10 @@ a {
   color: #ffffff;
 }
 
-.navbar-toggler-icon {
+.navbar {
+  border-bottom: 1px solid #838391 0.85;
+}
+.navbar .navbar-toggler-icon {
   display: inline-block;
   width: 1.5em;
   height: 1.5em;
