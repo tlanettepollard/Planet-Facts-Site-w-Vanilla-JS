@@ -1,0 +1,7 @@
+@use '../custom'as *;
+
+.fact-section {
+    &__main {
+        row-gap: 0.8rem;
+    }
+}
