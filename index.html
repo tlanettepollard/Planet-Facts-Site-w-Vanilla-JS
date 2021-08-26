@@ -11,39 +11,39 @@
   
   <title>Frontend Mentor | Planets fact site</title>
 </head>
-<body class="bg-primary text-white">
+<body class="bg-primary text-white vh-100 vw-100">
   <header>
-    <nav class="navbar navbar-expand-md bg-transparent">
+    <nav class="navbar navbar-expand-md bg-transparent py-4 mb-3 border-bottom">
       <div class="container-fluid flex-md-column flex-lg-row">
-        <a class="navbar-brand text-uppercase text-white" href="#">The Planets</a>
+        <a class="navbar-brand text-uppercase text-white mb-1" href="#">The Planets</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#planetToggler" aria-controls="planetToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-lg-end" id="planetToggler">
           <ul class="navbar-nav">
             <li class="nav-item text-uppercase">
-              <a class="nav-link active text-white" aria-current="page" href="#">Mercury</a>
+              <a class="nav-link active text-white mx-1 px-md-3 fs-6" aria-current="page" href="#">Mercury</a>
             </li>
             <li class="nav-item text-uppercase">
-              <a class="nav-link active text-white" aria-current="page" href="#">Venus</a>
+              <a class="nav-link active text-white mx-1 px-md-3 fs-6" aria-current="page" href="#">Venus</a>
             </li>
             <li class="nav-item text-uppercase">
-              <a class="nav-link active text-white" aria-current="page" href="#">Earth</a>
+              <a class="nav-link active text-white mx-1 px-md-3 fs-6" aria-current="page" href="#">Earth</a>
             </li>
             <li class="nav-item text-uppercase">
-              <a class="nav-link active text-white" aria-current="page" href="#">Mars</a>
+              <a class="nav-link active text-white mx-1 px-md-3 fs-6" aria-current="page" href="#">Mars</a>
             </li>
             <li class="nav-item text-uppercase">
-              <a class="nav-link active text-white" aria-current="page" href="#">Jupiter</a>
+              <a class="nav-link active text-white mx-1 px-md-3 fs-6" aria-current="page" href="#">Jupiter</a>
             </li>
             <li class="nav-item text-uppercase">
-              <a class="nav-link active text-white" aria-current="page" href="#">Saturn</a>
+              <a class="nav-link active text-white mx-1 px-md-3 fs-6" aria-current="page" href="#">Saturn</a>
             </li>
             <li class="nav-item text-uppercase">
-              <a class="nav-link active text-white" aria-current="page" href="#">Uranus</a>
+              <a class="nav-link active text-white mx-1 px-md-3 fs-6" aria-current="page" href="#">Uranus</a>
             </li>
             <li class="nav-item text-uppercase">
-              <a class="nav-link active text-white" aria-current="page" href="#">Neptune</a>
+              <a class="nav-link active text-white mx-1 px-md-3 fs-6" aria-current="page" href="#">Neptune</a>
             </li>
           </ul>
         </div>
@@ -51,10 +51,10 @@
     </nav>
   </header>
 
-  <main class="d-flex flex-column position-relative">
-    <section id="upper-section" class="d-lg-flex flex-lg-row justify-content-lg-evenly w-100 mx-auto">
-      <div id="upper-section__left" class="w-75 mx-auto">
-        <img id="upper-section__image1" class="img-fluid planet" src="assets/planet-mercury.svg">
+  <main class="main d-flex flex-column position-relative container-fluid">
+    <section id="upper-section" class="description d-lg-flex flex-lg-row justify-content-lg-evenly w-100">
+      <div id="upper-section__left" class="w-100">
+        <img id="upper-section__image1" class="img-fluid mx-auto d-block planet" src="assets/planet-mercury.svg">
        <!-- <img id="upper-section__image2" class="img-fluid geology" src="assets/geology-mercury.png">-->
       </div> 
 
@@ -84,24 +84,24 @@
       </div><!-- .upper-section__right -->
     </section>
 
-    <footer class="bottom-section flex-md-row">
-      <div id="bottom-section__main" class="container-fluid">
-        <div id="botton-section--one">
+    <footer class="fact-section position-relative d-flex flex-column w-100">
+      <div id="fact-section__main" class="container-fluid d-lg-flex">
+        <div id="fact-section--one">
           <h4>Rotation Time</h4>
           <h2 id="rotation-time">58.6 Days</h2>
         </div>
 
-        <div id="botton-section--two">
+        <div id="fact-section--two">
           <h4>Revolution Time</h4>
           <h2 id="revolution-time">87.97 Days</h2>
         </div>
 
-        <div id="botton-section--three">
+        <div id="fact-section--three">
           <h6>Radius</h6>
           <h2 id="radius">2,439.7 KM</h2>
         </div>
 
-        <div id="botton-section--four">
+        <div id="fact-section--four">
           <h6>Average Temp.</h6>
           <h2 id="average-temp">430°c</h2>
         </div>

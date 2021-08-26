@@ -1,6 +1,7 @@
 @use '../scss/components/mixins' as *;
 
-//My colors
+// My Variables
+//Primary Colors
 $white: #ffffff;
 $gray-border: #838391;
 $gray-hover: #38384F;
@@ -16,24 +17,58 @@ $saturn: #cd5120;
 $uranus: #1ec2a4;
 $venus: #eda249;
 
-
-$primary: $dk-blue-bg;
-$secondary: $gray-border;
-
-// Font
+//My Fonts
 $header-font: 'Antonio',
 sans-serif;
 $body-font: 'Spartan',
 sans-serif;
-
-
-$headings-font-family: $header-font;
-$font-family-sans-serif: $body-font;
+$menu-font-size: 12px;
 
 // Breakpoints
-
 $bp-lg: 992px;
 $bp-xl: 1200px;
+
+//Grid Columns
+
+
+/***********************/
+
+// BtSt Variables
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * 0.75; // 12px
+$font-size-lg: $font-size-base * 1.25;
+/***********************/
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $menu-font-size;
+
+$font-sizes: (1: $h1-font-size,
+    2: $h2-font-size,
+    3: $h3-font-size,
+    4: $h4-font-size,
+    5: $h5-font-size,
+    6: $h6-font-size);
+
+
+
+/**************************/   
+//My Overrides
+$primary: $dk-blue-bg;
+$secondary: $gray-border;
+$headings-font-family: $header-font;
+$font-family-sans-serif: $body-font;
+$border-color: $gray-border;
+
+
+
+
+
+
+
 
 
 
