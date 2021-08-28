@@ -5,3 +5,11 @@ Today I learned how to set up a package.json file using npm in the terminal. I t
 ### 08/26/2021
 
 Today I am still learning/working about overriding Bootstrap5 variables.
+
+### 08/27/2021
+
+I may switch to HTML/CSS/Vanilla JS. I having a hard time with Flexbox and CSS Grid conflicts with Bootstrap.
+
+### 08/28/2021
+
+A fellow coder suggested that I just code with regular HTML for that section if there is a conflict. I decided to start again without Bootstrap.
