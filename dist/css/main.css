@@ -41,9 +41,9 @@ a {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-gap: 5rem;
-  grid-template-areas: "description" "facts";
+  grid-template-areas: "header" "description" "facts";
 }
 
 .button {
@@ -104,4 +104,39 @@ h4 {
   font-size: 1.4rem;
   line-height: 2.5rem;
   color: #ffffff;
+}
+
+#top-section {
+  grid-area: description;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#top-section #top-section__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#top-section #top-section__right #top-section__right-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+#top-section .desc__section-left--image1 {
+  width: 11.1rem;
+}
+#top-section .desc__section-left--image2 {
+  width: 5rem;
+}
+
+#bottom-section {
+  grid-area: facts;
+}
+
+#header {
+  grid-area: header;
 }/*# sourceMappingURL=main.css.map */
