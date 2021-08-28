@@ -1,6 +1,6 @@
 ### 08/24/2021
 
-Today I learned how to set up a package.json file using npm in the terminal. I then added sass and bootstrap and an autoprefixer. Learning how to override Bootstrap styles using a custom.scss. You go into the variables file and copy the variables you will need to override.
+Today I learned how to set up a package.json file using npm in the terminal. I then added sass and bootstrap and an autoprefixer. Learning how to override Bootstrap styles using a custom.scss. You go into the variables file and copy the variables you will need to override. Still learning that the order of how you import your files into the main scss file matters on how variables are defined.
 
 ### 08/26/2021
 
