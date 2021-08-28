@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 1px solid white; 
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+}
+
+body {
+    background-color: $color-dk-blue;
+    color: $color-white;
+    width: 100%;
+    min-height: 100vh;
+    font-family: $body-font-family;
+    font-size: 1.6rem;
+}
