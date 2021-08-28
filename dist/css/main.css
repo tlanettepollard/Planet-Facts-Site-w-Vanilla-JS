@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Spartan:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500;700&family=Spartan:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +21,51 @@ body {
   color: #ffffff;
   width: 100%;
   min-height: 100vh;
+}
+
+a {
   font-family: "Spartan", sans-serif;
-  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+h1,
+h2 {
+  font-family: "Antonio", sans-serif;
+  font-weight: 500;
+}
+
+h3,
+h4 {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+}
+
+.h1-title {
+  font-size: 8rem;
+  line-height: 10.3rem;
+}
+
+.h2-title {
+  font-size: 4rem;
+  line-height: 5.2rem;
+  letter-spacing: -1.5;
+}
+
+.h3-title {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  letter-spacing: 2.6;
+}
+
+.h4-title {
+  font-size: 1.1rem;
+  line-height: 2.5rem;
+  letter-spacing: 1;
+}
+
+.body-text {
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
 }/*# sourceMappingURL=main.css.map */

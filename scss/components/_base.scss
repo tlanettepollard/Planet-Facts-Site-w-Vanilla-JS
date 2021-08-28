@@ -20,6 +20,9 @@ body {
     color: $color-white;
     width: 100%;
     min-height: 100vh;
+}
+
+a {
     font-family: $body-font-family;
-    font-size: 1.6rem;
+    color: $color-white;
 }
