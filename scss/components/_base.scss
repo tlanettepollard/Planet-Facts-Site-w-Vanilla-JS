@@ -17,7 +17,6 @@ html {
 
 body {
     background-color: $color-dk-blue;
-    color: $color-white;
     width: 100%;
     min-height: 100vh;
 }
@@ -26,3 +25,31 @@ a {
     font-family: $body-font-family;
     color: $color-white;
 }
+
+.wrapper {
+    max-width: 148rem;
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin: auto;
+    position: relative;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+.button {
+    background-color: transparent;
+}
+
+/*.sr-only {
+    padding: 0;
+    width: .1rem;
+    height: .1rem;
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    border: 0;
+} */
