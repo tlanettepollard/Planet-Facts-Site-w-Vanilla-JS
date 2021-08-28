@@ -12,13 +12,14 @@
 
 html {
     box-sizing: border-box;
+    height: 100%;
     font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
 }
 
 body {
     background-color: $color-dk-blue;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
 }
 
 a {
@@ -28,7 +29,7 @@ a {
 
 .wrapper {
     max-width: 148rem;
-    min-height: 100vh;
+    height: 100%;
     overflow-x: hidden;
     margin: auto;
     position: relative;
@@ -37,6 +38,12 @@ a {
 .main {
     height: 100%;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 5rem;
+    grid-template-areas: "description"
+    "facts";
 }
 
 .button {
