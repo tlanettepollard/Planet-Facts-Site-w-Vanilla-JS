@@ -1,25 +1,6 @@
 .description {
     grid-area: description;
-    @include flex (column, space-between, center);
-
-    #top-section__right {
-        @include flex (column, space-between, center);
-
-       #top-section__right-bottom {
-           @include flex (row, space-between, center);
-           position: absolute;
-       }
-       
-    }
 
     
-    
-
-    .description-img-one {
-        width: 11.1rem;
-    }
-    .description-img-two {
-        width: 5rem;
-    }
 }
 
