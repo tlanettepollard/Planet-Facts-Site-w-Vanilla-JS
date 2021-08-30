@@ -1,4 +1,4 @@
-#top-section {
+.description {
     grid-area: description;
     @include flex (column, space-between, center);
 
@@ -15,10 +15,10 @@
     
     
 
-    .desc__section-left--image1 {
+    .description-img-one {
         width: 11.1rem;
     }
-    .desc__section-left--image2 {
+    .description-img-two {
         width: 5rem;
     }
 }
