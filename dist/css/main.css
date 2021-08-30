@@ -144,6 +144,11 @@ h4 {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  #header .menu__header {
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   #header .menu__header {
     width: 25%;
@@ -157,12 +162,16 @@ h4 {
 #header .menu__inner {
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  #header .menu__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   #header .menu__inner {
     width: 75%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
   }
 }/*# sourceMappingURL=main.css.map */

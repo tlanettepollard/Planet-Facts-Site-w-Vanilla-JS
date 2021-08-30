@@ -4,6 +4,7 @@
 
     .menu {
         width: 100%;
+
         @media screen and (min-width: $bp-xl) {
             @include flex(row, space-between, center);
         }
@@ -11,7 +12,11 @@
         &__header {
             width: 100%;
             @include flex (row, space-between, center);
-            
+
+            @media screen and (min-width: $bp-md) {
+                justify-content: center;
+            }
+
             @media screen and (min-width: $bp-xl){
                 width: 25%;
             }
@@ -27,9 +32,12 @@
         &__inner {
             width: 100%;
 
+            @media screen and (min-width: $bp-md) {
+                @include flex(row, space-around, center);
+            }
+
             @media screen and (min-width: $bp-xl) {
                 width: 75%;
-                @include flex(row, space-between, center);
             }
         }
     }    
