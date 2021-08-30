@@ -117,6 +117,12 @@ h4 {
 .description {
   grid-area: description;
 }
+.description .planet {
+  width: 11.1rem;
+}
+.description .geology {
+  width: 5rem;
+}
 
 #bottom-section {
   grid-area: facts;
