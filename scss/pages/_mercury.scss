@@ -1,0 +1,83 @@
+// Header and Navbar
+
+#header {
+    grid-area: header;
+    width: 100%;
+
+    .menu {
+        width: 100%;
+        @media screen and (min-width: $bp-xl) {
+            @include flex(row, space-between, center);
+        }
+        &__header {
+            width: 100%;
+            @include flex (row, space-between, center);
+
+            @media screen and (min-width: $bp-md) {
+                justify-content: center;
+            }
+            @media screen and (min-width: $bp-xl) {
+                width: 25%;
+            }
+            .btn__icon {
+                @media screen and (min-width: $bp-md) {
+                    display: none;
+                }
+            }
+        }
+
+        &__inner {
+            width: 100%;
+            @media screen and (min-width: $bp-md) {
+                @include flex(row, space-around, center);
+            }
+            @media screen and (min-width: $bp-xl) {
+                width: 75%;
+            }
+        }
+    }
+}
+
+// Description Section
+.description {
+    grid-area: description;
+    @include flex (column, center, center);
+    &-mobile {
+        @include flex (row, space-between, center);
+        width: 100%;
+        @media screen and (min-width: $bp-md) {
+            display: none;
+        }
+    }
+
+    &-tablet {
+        display: none;
+        @media screen and (min-width: $bp-md) {
+            display: block;
+        }
+    }
+
+    .planet {
+        width: 11.1rem;
+    }
+
+    .geology {
+        width: 5rem;
+    }
+
+    #top-section-right-top {
+        @include flex (column, center, center);
+        .description-planet-text,
+        .source {
+            text-align: center;
+        }
+    }
+
+}
+
+// Facts Section
+
+#bottom-section {
+    grid-area: facts;
+}
+
