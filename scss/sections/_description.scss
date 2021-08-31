@@ -1,6 +1,20 @@
 .description {
     grid-area: description;
     
+    &-mobile {
+        
+        @media screen and (min-width: $bp-md){
+            display: none;
+        }
+    }
+
+    &-tablet {
+        display: none;
+
+        @media screen and (min-width: $bp-md) {
+            display: block;
+        }
+    }
     .planet {
         width: 11.1rem;
     }
