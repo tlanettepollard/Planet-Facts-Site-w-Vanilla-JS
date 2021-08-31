@@ -70,3 +70,22 @@ ul {
     overflow: hidden;
     border: 0;
 } */
+
+/* Attribution */
+.attribution {
+    position: relative;
+    margin-top: 5rem;
+    padding: 5px 0;
+    font-size: 10px;
+    text-align: center;
+    color: $color-white;
+}
+
+.attribution a {
+    color: $color-white;
+    margin-top: 2rem;
+}
+
+.attribution a:hover {
+    color: $color-white;
+}

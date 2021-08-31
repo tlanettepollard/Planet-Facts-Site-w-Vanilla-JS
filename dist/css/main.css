@@ -68,6 +68,25 @@ ul {
     overflow: hidden;
     border: 0;
 } */
+/* Attribution */
+.attribution {
+  position: relative;
+  margin-top: 5rem;
+  padding: 5px 0;
+  font-size: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.attribution a {
+  color: #ffffff;
+  margin-top: 2rem;
+}
+
+.attribution a:hover {
+  color: #ffffff;
+}
+
 h1,
 h2 {
   font-family: "Antonio", sans-serif;
@@ -214,4 +233,13 @@ h4 {
 
 #bottom-section {
   grid-area: facts;
+  width: 100%;
+  height: 20rem;
+}
+#bottom-section .facts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
 }/*# sourceMappingURL=main.css.map */
