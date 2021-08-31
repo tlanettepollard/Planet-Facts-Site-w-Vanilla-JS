@@ -13,3 +13,7 @@ I may switch to HTML/CSS/Vanilla JS. I having a hard time with Flexbox and CSS G
 ### 08/28/2021
 
 A fellow coder suggested that I just code with regular HTML for that section if there is a conflict. I decided to start again without Bootstrap.
+
+### 08/31/2021
+
+I've decided to use all of the planet index pages instead of importing the json file. I'm keeping the other files just in case.

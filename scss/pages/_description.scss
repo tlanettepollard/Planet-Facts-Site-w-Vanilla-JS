@@ -1,0 +1,38 @@
+.description {
+    grid-area: description;
+    @include flex (column, center, center);
+    
+    &-mobile {
+        @include flex (row, space-between, center);
+        width: 100%;
+        @media screen and (min-width: $bp-md){
+            display: none;
+        }
+    }
+
+    &-tablet {
+        display: none;
+
+        @media screen and (min-width: $bp-md) {
+            display: block;
+        }
+    }
+    .planet {
+        width: 11.1rem;
+    }
+
+    .geology {
+        width: 5rem;
+    }
+
+    #top-section-right-top {
+        @include flex (column, center, center);
+
+        .description-planet-text, 
+        .source {
+            text-align: center;
+        }
+    }
+    
+}
+

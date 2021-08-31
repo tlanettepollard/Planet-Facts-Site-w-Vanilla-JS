@@ -18,6 +18,10 @@ html {
 
 body {
     background-color: $color-dk-blue;
+    background-image: url('/assets/background-stars.svg');
+    background-repeat: repeat;
+    background-size: 60%;
+    background-position: center;
     width: 100%;
     height: 100%;
 }
@@ -25,6 +29,10 @@ body {
 a {
     font-family: $body-font-family;
     color: $color-white;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .wrapper {
@@ -41,14 +49,14 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 5rem;
+    grid-gap: 2rem;
     grid-template-areas: 
     "header"
     "description"
     "facts";
 }
 
-.button {
+.btn {
     background-color: transparent;
 }
 
@@ -62,3 +70,22 @@ a {
     overflow: hidden;
     border: 0;
 } */
+
+/* Attribution */
+.attribution {
+    position: relative;
+    margin-top: 5rem;
+    padding: 5px 0;
+    font-size: 10px;
+    text-align: center;
+    color: $color-white;
+}
+
+.attribution a {
+    color: $color-white;
+    margin-top: 2rem;
+}
+
+.attribution a:hover {
+    color: $color-white;
+}

@@ -1,0 +1,46 @@
+#header {
+    grid-area: header;
+    width: 100%;
+
+    .menu {
+        width: 100%;
+
+        @media screen and (min-width: $bp-xl) {
+            @include flex(row, space-between, center);
+        }
+
+        &__header {
+            width: 100%;
+            @include flex (row, space-between, center);
+
+            @media screen and (min-width: $bp-md) {
+                justify-content: center;
+            }
+
+            @media screen and (min-width: $bp-xl){
+                width: 25%;
+            }
+
+            .btn__icon {
+
+                @media screen and (min-width: $bp-md) {
+                    display: none;
+                }
+            }
+        }
+
+        &__inner {
+            width: 100%;
+
+            @media screen and (min-width: $bp-md) {
+                @include flex(row, space-around, center);
+            }
+
+            @media screen and (min-width: $bp-xl) {
+                width: 75%;
+            }
+        }
+    }    
+}   
+
+    

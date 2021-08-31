@@ -19,6 +19,10 @@ html {
 
 body {
   background-color: #070724;
+  background-image: url("/assets/background-stars.svg");
+  background-repeat: repeat;
+  background-size: 60%;
+  background-position: center;
   width: 100%;
   height: 100%;
 }
@@ -26,6 +30,10 @@ body {
 a {
   font-family: "Spartan", sans-serif;
   color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .wrapper {
@@ -42,11 +50,11 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 5rem;
+  grid-gap: 2rem;
   grid-template-areas: "header" "description" "facts";
 }
 
-.button {
+.btn {
   background-color: transparent;
 }
 
@@ -60,6 +68,25 @@ a {
     overflow: hidden;
     border: 0;
 } */
+/* Attribution */
+.attribution {
+  position: relative;
+  margin-top: 5rem;
+  padding: 5px 0;
+  font-size: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.attribution a {
+  color: #ffffff;
+  margin-top: 2rem;
+}
+
+.attribution a:hover {
+  color: #ffffff;
+}
+
 h1,
 h2 {
   font-family: "Antonio", sans-serif;
@@ -106,37 +133,113 @@ h4 {
   color: #ffffff;
 }
 
-#top-section {
-  grid-area: description;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+#header {
+  grid-area: header;
+  width: 100%;
 }
-#top-section #top-section__right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+#header .menu {
+  width: 100%;
 }
-#top-section #top-section__right #top-section__right-bottom {
+@media screen and (min-width: 1200px) {
+  #header .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+#header .menu__header {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
 }
-#top-section .desc__section-left--image1 {
+@media screen and (min-width: 768px) {
+  #header .menu__header {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #header .menu__header {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #header .menu__header .btn__icon {
+    display: none;
+  }
+}
+#header .menu__inner {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  #header .menu__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #header .menu__inner {
+    width: 75%;
+  }
+}
+
+.description {
+  grid-area: description;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.description-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .description-mobile {
+    display: none;
+  }
+}
+.description-tablet {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .description-tablet {
+    display: block;
+  }
+}
+.description .planet {
   width: 11.1rem;
 }
-#top-section .desc__section-left--image2 {
+.description .geology {
   width: 5rem;
+}
+.description #top-section-right-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.description #top-section-right-top .description-planet-text,
+.description #top-section-right-top .source {
+  text-align: center;
 }
 
 #bottom-section {
   grid-area: facts;
+  width: 100%;
+  height: 20rem;
 }
-
-#header {
-  grid-area: header;
+#bottom-section .facts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
 }/*# sourceMappingURL=main.css.map */
