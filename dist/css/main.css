@@ -133,6 +133,54 @@ h4 {
   color: #ffffff;
 }
 
+.description {
+  grid-area: description;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.description-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .description-mobile {
+    display: none;
+  }
+}
+.description-tablet {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .description-tablet {
+    display: block;
+  }
+}
+.description .planet {
+  width: 11.1rem;
+}
+.description .geology {
+  width: 5rem;
+}
+.description #top-section-right-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.description #top-section-right-top .description-planet-text,
+.description #top-section-right-top .source {
+  text-align: center;
+}
+
+#bottom-section {
+  grid-area: facts;
+}
+
 #header {
   grid-area: header;
   width: 100%;
@@ -185,61 +233,4 @@ h4 {
   #header .menu__inner {
     width: 75%;
   }
-}
-
-.description {
-  grid-area: description;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.description-mobile {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .description-mobile {
-    display: none;
-  }
-}
-.description-tablet {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .description-tablet {
-    display: block;
-  }
-}
-.description .planet {
-  width: 11.1rem;
-}
-.description .geology {
-  width: 5rem;
-}
-.description #top-section-right-top {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.description #top-section-right-top .description-planet-text,
-.description #top-section-right-top .source {
-  text-align: center;
-}
-
-#bottom-section {
-  grid-area: facts;
-  width: 100%;
-  height: 20rem;
-}
-#bottom-section .facts {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2rem 0;
 }/*# sourceMappingURL=main.css.map */
