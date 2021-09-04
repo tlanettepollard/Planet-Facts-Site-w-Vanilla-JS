@@ -22,6 +22,8 @@
             }
 
             .btn__icon {
+                display: block;
+                cursor: pointer;
 
                 @media screen and (min-width: $bp-md) {
                     display: none;
@@ -31,6 +33,7 @@
 
         &__inner {
             width: 100%;
+            padding: 0 2rem;
 
             @media screen and (min-width: $bp-md) {
                 @include flex(row, space-around, center);
@@ -39,6 +42,29 @@
             @media screen and (min-width: $bp-xl) {
                 width: 75%;
             }
+
+            .menu-row {
+                @include flex (row, space-between, center);
+                
+                .planet-icon {
+                    padding: 0 1rem;
+                    @media screen and (min-width: $bp-md) {
+                        display: none;
+                    }
+                }
+
+                .menu-chevron {
+                    padding: 0 1rem;
+                    @media screen and (min-width: $bp-md) {
+                        display: none;
+                    }
+                }
+            }
+            
+        }
+
+        &__inner.active {
+            left: 0;
         }
     }    
 }   
