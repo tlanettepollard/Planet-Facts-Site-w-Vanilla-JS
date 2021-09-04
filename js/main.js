@@ -10,7 +10,7 @@ function mobileMenu() {
 }
 
 // Closes menu when link is clicked 
-const navLink = document.querySelectorAll(".navbar__menu-link");
+const navLink = document.querySelectorAll(".navbar__menu-item");
 
 navLink.forEach(n => n.addEventListener("click", closeMenu));
 function closeMenu() {
@@ -20,6 +20,13 @@ function closeMenu() {
 
 /************************** Planet Information **********/
 // Variables
+const planetName = document.querySelector(".navbar__header-title");
+const planetDesc = document.querySelector(".description-planet-text");
+const rotation = document.querySelector(".rotation-time ");
+const revolution = document.querySelector("revolution-time ");
+const radius = document.querySelector(".radius");
+const temperature = document.querySelector(".average-temp");
+
 
 // Objects for planet information
 
