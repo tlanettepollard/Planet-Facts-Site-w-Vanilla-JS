@@ -1,5 +1,6 @@
 .description {
     grid-area: description;
+    margin-top: 5rem;
     @include flex (column, center, center);
     
     &-mobile {
@@ -31,6 +32,12 @@
         .description-planet-text, 
         .source {
             text-align: center;
+        }
+    }
+
+    #top-section-right-bottom {
+        .btn {
+            background-color: transparent;
         }
     }
     
