@@ -20,4 +20,7 @@ I've decided to use all of the planet index pages instead of importing the json 
 
 ### 09/03/2021
 
-I'm going to try to add the information using the data.json file. Wish me luck. I made the planet icons for the mobile menu using Sketch. I am so proud of myself. My planet icons look awesome!
+I'm going to try to add the information using the data.json file. Wish me luck. I made the planet icons for the mobile menu using Sketch. I am so proud of myself. My planet icons look awesome! For my responsive navigation, I am referring to:
+
+Resources:
+[Let's Build a Responsive Navbar...](https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci)
