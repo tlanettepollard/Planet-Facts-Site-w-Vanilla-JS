@@ -220,6 +220,7 @@ h4 {
 }
 #header .menu__inner {
   width: 100%;
+  padding: 0 2rem;
 }
 @media screen and (min-width: 768px) {
   #header .menu__inner {
@@ -232,5 +233,27 @@ h4 {
 @media screen and (min-width: 1200px) {
   #header .menu__inner {
     width: 75%;
+  }
+}
+#header .menu__inner .menu-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .menu__inner .menu-row .planet-icon {
+  padding: 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  #header .menu__inner .menu-row .planet-icon {
+    display: none;
+  }
+}
+#header .menu__inner .menu-row .menu-chevron {
+  padding: 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  #header .menu__inner .menu-row .menu-chevron {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */

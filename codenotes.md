@@ -17,3 +17,7 @@ A fellow coder suggested that I just code with regular HTML for that section if 
 ### 08/31/2021
 
 I've decided to use all of the planet index pages instead of importing the json file. I'm keeping the other files just in case.
+
+### 09/03/2021
+
+I'm going to try to add the information using the data.json file. Wish me luck. I made the planet icons for the mobile menu using Sketch. I am so proud of myself. My planet icons look awesome!
