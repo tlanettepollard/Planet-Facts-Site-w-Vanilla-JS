@@ -22,11 +22,13 @@ function closeMenu() {
 // Variables
 
 // Facts
-const planetName = document.querySelector(".navbar__header-title");
-const planet = document.querySelector(".planet");
+const planetName = document.querySelector(".description-planet-title");
+const planetLink = document.querySelector(".planet-item");
+const planet = document.querySelector(".planet-image");
 const planetDesc = document.querySelector(".description-planet-text");
-const rotation = document.querySelector(".rotation-time ");
-const revolution = document.querySelector("revolution-time ");
+const source = document.querySelector(".source-link");
+const rotation = document.querySelector(".rotation-time");
+const revolution = document.querySelector(".revolution-time");
 const radius = document.querySelector(".radius");
 const temperature = document.querySelector(".average-temp");
 
@@ -62,7 +64,7 @@ const buttonColors = {
     7: "2D68F0"
 }
 
-const planetSizes = {
+const planetSize = {
     0: { large: "290px", medium: "184px", small: "111px"},
     1: { large: "400px", medium: "253px", small: "154px" },
     2: { large: "450px", medium: "285px", small: "173px" },
@@ -88,7 +90,7 @@ let currentDesc = "overview";
 fetchData();
 changeBtn();
 
-function planetInput() {
+function planetInput(inputPlanet) {
     currentPlanet = inputPlanet;
     currentDesc = "overview";
     fetchData();
@@ -113,9 +115,14 @@ function geologyInput() {
     changeBtn();
 }
 
+planetLink.addEventListener("click", changePlanet);
+function changePlanet() {
+    for (let i = 0; i < planets.length; i++) {
+        planetInput();
+    }
+}
 
-
-let data;
+var data;
 
 function fetchData() {
     if (typeof data === "undefined") {
@@ -144,6 +151,78 @@ function displayInfo() {
         planet.style.backgroundRepeat = "no-repeat";
         planet.style.backgroundPosition = "center";
 
-        
+        // Breakpoints for Overview
+        if (vw < 768) {
+            planet.style.backgroundSize = `${planetSize[currentPlanet].small}`, `${planetSize[currentPlanet].small}`;
+            planet.style.height = `${planetSize[currentPlanet].small}`;
+            planet.style.width = `${planetSize[currentPlanet].small}`;
+        } else if (vw>=768 && vw <=992) {
+            planet.style.backgroundSize = `${planetSize[currentPlanet].medium}`, `${planetSize[currentPlanet].medium}`;
+            planet.style.height = `${planetSize[currentPlanet].medium}`;
+            planet.style.width = `${planetSize[currentPlanet].medium}`;
+        } else {
+            planet.style.backgroundSize = `${planetSize[currentPlanet].large}`, `${planetSize[currentPlanet].large}`;
+            planet.style.height = `${planetSize[currentPlanet].large}`;
+            planet.style.width = `${planetSize[currentPlanet].large}`;
+        }
+    } else if (currentDesc === "structure") {
+        planetDesc.innerText = data[currentPlanet].structure.content;
+        source.href = data[currentPlanet].structure.source;
+        planet.style.background = `url("/assets/planet-${planets[currentPlanet]}-internal.svg")`;
+        planet.style.backgroundRepeat = "no-repeat";
+        planet.style.backgroundPosition = "center";
+
+        // Breakpoints for Structure
+        if (vw < 768) {
+            planet.style.backgroundSize = `${planetSize[currentPlanet].small}`, `${planetSize[currentPlanet].small}`;
+            planet.style.height = `${planetSize[currentPlanet].small}`;
+            planet.style.width = `${planetSize[currentPlanet].small}`;
+        } else if (vw>=768 && vw <=992) {
+            planet.style.backgroundSize = `${planetSize[currentPlanet].medium}`, `${planetSize[currentPlanet].medium}`;
+            planet.style.height = `${planetSize[currentPlanet].medium}`;
+            planet.style.width = `${planetSize[currentPlanet].medium}`;
+        } else {
+            planet.style.backgroundSize = `${planetSize[currentPlanet].large}`, `${planetSize[currentPlanet].large}`;
+            planet.style.height = `${planetSize[currentPlanet].large}`;
+            planet.style.width = `${planetSize[currentPlanet].large}`;
+        }
+
+    } else  {
+        planetDesc.innerText = data[currentPlanet].geology.content;
+        source.href = data[currentPlanet].geology.source;
+        planet.style.background = `url("/assets/geology-${planets[currentPlanet]}.png"), url("/assets/planet-${planets[currentPlanet]}.svg")`;
+        planet.style.backgroundRepeat = "no-repeat, no-repeat";
+        planet.style.backgroundPosition = "50% 100% center";
+
+        // Breakpoints for Geology
+        if (vw < 768) {
+            planet.style.backgroundSize = `${geologySize.small}, ${planetSize[currentPlanet].small}, ${planetSize[currentPlanet].small}`;
+            planet.style.height = `${planetSize[currentPlanet].small}`;
+            planet.style.width = `${planetSize[currentPlanet].small}`;
+        } else if (vw>=768 && vw <=992) {
+            planet.style.backgroundSize = `${geologySize.medium}, ${planetSize[currentPlanet].medium}, ${planetSize[currentPlanet].medium}`;
+            planet.style.height = `${planetSize[currentPlanet].medium}`;
+            planet.style.width = `${planetSize[currentPlanet].medium}`;
+        } else {
+            planet.style.backgroundSize = `${geologySize.large}, ${planetSize[currentPlanet].large}`, `${planetSize[currentPlanet].large}`;
+            planet.style.height = `${planetSize[currentPlanet].large}`;
+            planet.style.width = `${planetSize[currentPlanet].large}`;
+        }
     }
 } // displayInfo
+
+function changeBtn() { 
+    if (currentDesc === "overview") {
+        overview.style.backgroundColor = `#$(btnColors[currentPlanet])`;
+        structure.style.backgroundColor = "transparent";
+        geology.style.backgroundColor = "transparent";
+    } else if (currentDesc === "structure") {
+        overview.style.backgroundColor = "tranparent";
+        structure.style.backgroundColor = `#$(btnColors[currentPlanet])`;
+        geology.style.backgroundColor = "transparent";
+    } else {
+        overview.style.backgroundColor = "tranparent";
+        structure.style.backgroundColor = "transparent";
+        geology.style.backgroundColor = `#$(btnColors[currentPlanet])`;
+    }
+}
