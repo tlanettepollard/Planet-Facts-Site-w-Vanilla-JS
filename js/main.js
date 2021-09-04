@@ -23,7 +23,7 @@ function closeMenu() {
 
 // Facts
 const planetName = document.querySelector(".description-planet-title");
-const planetLink = document.querySelector(".planet-item");
+//const planetLink = document.querySelector(".planet-item");
 const planet = document.querySelector(".planet-image");
 const planetDesc = document.querySelector(".description-planet-text");
 const source = document.querySelector(".source-link");
@@ -115,12 +115,6 @@ function geologyInput() {
     changeBtn();
 }
 
-planetLink.addEventListener("click", changePlanet);
-function changePlanet() {
-    for (let i = 0; i < planets.length; i++) {
-        planetInput();
-    }
-}
 
 var data;
 
