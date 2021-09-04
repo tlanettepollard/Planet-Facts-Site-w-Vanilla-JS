@@ -23,6 +23,7 @@ function closeMenu() {
 
 // Facts
 const planetName = document.querySelector(".navbar__header-title");
+const planet = document.querySelector(".planet");
 const planetDesc = document.querySelector(".description-planet-text");
 const rotation = document.querySelector(".rotation-time ");
 const revolution = document.querySelector("revolution-time ");
@@ -126,3 +127,23 @@ function fetchData() {
     else displayInfo();
 }
 
+// Displaying planet information
+
+function displayInfo() {
+
+    planetName.innerText = data[currentPlanet].name;
+    rotation.innerText = data[currentPlanet].rotation;
+    revolution.innerText = data[currentPlanet].revolution;
+    radius.innerText = data[currentPlanet].radius;
+    temperature.innerText = data[currentPlanet].temperature;
+
+    if (currentDesc === "overview") {
+        planetDesc.innerText = data[currentPlanet].overview.content;
+        source.href = data[currentPlanet].overview.source;
+        planet.style.background = `url("/assets/planet-${planets[currentPlanet]}.svg")`;
+        planet.style.backgroundRepeat = "no-repeat";
+        planet.style.backgroundPosition = "center";
+
+        
+    }
+} // displayInfo

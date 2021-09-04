@@ -27,7 +27,8 @@ Resources:
 
 ### 09/04/2021
 
-Today I am working on the responsive navbar. I used a tutorial on dev.to. Posted link yesterday. I was able to add transition and have the mobileNav as an offcanvas menu. I am referring to a fellow coder for importing data into the website.
+Today I am working on the responsive navbar. I used a tutorial on dev.to. Posted link yesterday. I was able to add transition and have the mobileNav as an offcanvas menu. I am referring to a fellow coder for importing data into the website. I also researched DOM style using JS. 
 
 Resources:
 [Planets Fact Site](https://github.com/KevinGBojan/planets-fact-site) by Kevin G Bojan
+[W3 Schools DOM Style](https://www.w3schools.com/jsref/prop_style_background.asp)
