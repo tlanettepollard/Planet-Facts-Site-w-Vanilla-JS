@@ -32,3 +32,7 @@ Today I am working on the responsive navbar. I used a tutorial on dev.to. Posted
 Resources:
 [Planets Fact Site](https://github.com/KevinGBojan/planets-fact-site) by Kevin G Bojan
 [W3 Schools DOM Style](https://www.w3schools.com/jsref/prop_style_background.asp)
+
+### 09/05/2021
+
+I searched to find an alternative to using `onClick` in my HTML. I was having a hard time finding a way to set up the addEventListener. I will keep searching. 
