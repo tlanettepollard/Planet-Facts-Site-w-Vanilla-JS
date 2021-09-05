@@ -23,7 +23,6 @@ function closeMenu() {
 
 // Facts
 const planetName = document.querySelector(".description-planet-title");
-//const planetLink = document.querySelector(".planet-item");
 const planet = document.querySelector(".planet-image");
 const planetDesc = document.querySelector(".description-planet-text");
 const source = document.querySelector(".source-link");
@@ -128,6 +127,8 @@ function fetchData() {
     else displayInfo();
 }
 
+document.getElementById('planet-item').addEventListener('click', planetInput)
+
 // Displaying planet information
 
 function displayInfo() {
@@ -207,16 +208,16 @@ function displayInfo() {
 
 function changeBtn() { 
     if (currentDesc === "overview") {
-        overview.style.backgroundColor = `#$(btnColors[currentPlanet])`;
+        overview.style.backgroundColor = `#${btnColors[currentPlanet]}`;
         structure.style.backgroundColor = "transparent";
         geology.style.backgroundColor = "transparent";
     } else if (currentDesc === "structure") {
         overview.style.backgroundColor = "tranparent";
-        structure.style.backgroundColor = `#$(btnColors[currentPlanet])`;
+        structure.style.backgroundColor = `#${btnColors[currentPlanet]}`;
         geology.style.backgroundColor = "transparent";
     } else {
         overview.style.backgroundColor = "tranparent";
         structure.style.backgroundColor = "transparent";
-        geology.style.backgroundColor = `#$(btnColors[currentPlanet])`;
+        geology.style.backgroundColor = `#${btnColors[currentPlanet]}`;
     }
 }
