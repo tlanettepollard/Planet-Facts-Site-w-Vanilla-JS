@@ -31,9 +31,10 @@
         &__menu {
             width: 100%;
             @media only screen and (max-width: 767px){
-                 position: fixed;
+                background-color: $color-dk-blue;
+                position: fixed;
                  left: -100%;
-                 transition: 0.3s;
+                 transition: 0.5s;
             }
            
 

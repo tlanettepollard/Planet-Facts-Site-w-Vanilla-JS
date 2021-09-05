@@ -1,7 +1,7 @@
 .description {
     grid-area: description;
-    margin-top: 5rem;
-    @include flex (column, center, center);
+    height: 100%;
+    @include flex (column, space-between, center);
     
     &-mobile {
         @include flex (row, space-between, center);
@@ -13,7 +13,6 @@
 
     &-tablet {
         display: none;
-
         @media screen and (min-width: $bp-md) {
             display: block;
         }
