@@ -127,8 +127,6 @@ function fetchData() {
     else displayInfo();
 }
 
-document.getElementById('planet-item').addEventListener('click', planetInput)
-
 // Displaying planet information
 
 function displayInfo() {
@@ -208,16 +206,16 @@ function displayInfo() {
 
 function changeBtn() { 
     if (currentDesc === "overview") {
-        overview.style.backgroundColor = `#${btnColors[currentPlanet]}`;
+        overview.style.backgroundColor = `#${buttonColors[currentPlanet]}`;
         structure.style.backgroundColor = "transparent";
         geology.style.backgroundColor = "transparent";
     } else if (currentDesc === "structure") {
         overview.style.backgroundColor = "tranparent";
-        structure.style.backgroundColor = `#${btnColors[currentPlanet]}`;
+        structure.style.backgroundColor = `#${buttonColors[currentPlanet]}`;
         geology.style.backgroundColor = "transparent";
     } else {
         overview.style.backgroundColor = "tranparent";
         structure.style.backgroundColor = "transparent";
-        geology.style.backgroundColor = `#${btnColors[currentPlanet]}`;
+        geology.style.backgroundColor = `#${buttonColors[currentPlanet]}`;
     }
 }
