@@ -35,7 +35,18 @@
     }
 
     #top-section-right-bottom {
-        .btn {
+
+        .description-buttons {
+
+            .btn {
+                background-color: transparent;
+            }
+        }
+        
+    }
+
+    .description-mobile {
+        .btn-mobile {
             background-color: transparent;
         }
     }
