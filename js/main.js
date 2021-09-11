@@ -24,7 +24,7 @@ function closeMenu() {
 // Variables
 
 // Facts
-const planetLink = document.querySelector('.navbar__menu-link');
+const planetLinks = document.querySelector('.nav__link');
 const planetName = document.querySelector('.planet-title');
 const planetImage = document.querySelector('.planet-image');
 const planetDesc = document.querySelector('.planet-text');
@@ -86,7 +86,7 @@ const geologySize = {
 }
 
 // Get information from data.json
-let data;
+/*let data;
 
 function fetchData() {
     if (typeof data === 'undefined') {
@@ -102,6 +102,7 @@ let currentPlanet = 0;
 let currentState = 'overview';
 
 fetchData();
-changeBtn();
+changeBtn(); */
+
 
 

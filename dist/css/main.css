@@ -32,7 +32,8 @@ a {
   color: #ffffff;
 }
 
-ul {
+ul,
+li {
   list-style-type: none;
 }
 
@@ -177,7 +178,10 @@ h4 {
 .description #top-section-right-top .source {
   text-align: center;
 }
-.description #top-section-right-bottom .btn {
+.description #top-section-right-bottom .description-buttons .btn {
+  background-color: transparent;
+}
+.description .description-mobile .btn-mobile {
   background-color: transparent;
 }
 
@@ -188,6 +192,7 @@ h4 {
 .header {
   grid-area: header;
   width: 100%;
+  border-bottom: 1px solid #838391;
 }
 .header .navbar {
   width: 100%;
@@ -225,6 +230,9 @@ h4 {
     display: none;
   }
 }
+.header .navbar__header-title {
+  padding: 2rem 0;
+}
 .header .navbar__menu {
   width: 100%;
 }
@@ -254,6 +262,7 @@ h4 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-top: 2rem;
 }
 .header .navbar__menu-item .planet-icon {
   padding: 0 1rem;
@@ -272,6 +281,59 @@ h4 {
     display: none;
   }
 }
+.header .navbar__menu-item .nav__link {
+  padding: 0;
+}
 .header .navbar__menu.active {
   left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar__menu-item {
+    cursor: pointer;
+    border-top: 5px solid transparent;
+    padding-top: 1rem;
+  }
+
+  .navbar__menu-item:hover {
+    opacity: 1;
+  }
+
+  .nav__item--mercury:hover {
+    border-top: 3px solid #419ebb;
+  }
+
+  .nav__item--venus:hover {
+    border-top: 3px solid #eda249;
+  }
+
+  .nav__item--earth:hover {
+    border-top: 3px solid #6f2ed6;
+  }
+
+  .nav__item--mars:hover {
+    border-top: 3px solid #d14c32;
+  }
+
+  .nav__item--jupiter:hover {
+    border-top: 3px solid #d83a34;
+  }
+
+  .nav__item--saturn:hover {
+    border-top: 3px solid #cd5120;
+  }
+
+  .nav__item--uranus:hover {
+    border-top: 3px solid #1ec2a4;
+  }
+
+  .nav__item--neptune:hover {
+    border-top: 3px solid #2d68f0;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
