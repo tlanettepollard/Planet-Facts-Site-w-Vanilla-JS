@@ -85,20 +85,76 @@ const geologySize = {
     small: "50px 58.28px"
 }
 
+let currentPlanet = planets[0];
+let currentState = "overview";
 
+fetchData();
+changeBtn();
 
 
 // Get information from data.json
 function fetchData() {
-    fetch('/data.json')
-        .then(response => {
-            return response.json();
-        })
-        .then(data => {
-            console.log(data);
-        }).catch(error => {
-            console.log(error);
-        });
-}
+    if (typeof data === "undefined") {
+        fetch('/data.json')
+            .then(response => response.json())
+            .then(json => {
+                //console.log(data);
+                data = json;
+                displayPlanetInfo();
+            }).catch(error => {
+                console.log(error);
+            });
+    }
+    else displayPlanetInfo();
+} 
+
 fetchData();
 
+
+// Change buttons to change data 
+function changeBtn() {
+    if (currentState === "overview") {
+        overview.style.backgroundColor = `${btnColors[currentPlanet]}`;
+        structure.style.backgroundColor = 'transparent';
+        geology.style.backgroundColor = 'transparent';
+    } else if (currentState === "structure") {
+        overview.style.backgroundColor = 'transparent';
+        structure.style.backgroundColor = `${btnColors[currentPlanet]}`;
+        geology.style.backgroundColor = 'transparent';
+    } else {
+        overview.style.backgroundColor = 'transparent';
+        structure.style.backgroundColor = 'transparent';
+        geology.style.backgroundColor = `${btnColors[currentPlanet]}`;
+    }
+}
+
+changeBtn();
+
+
+function overviewBtn() {
+    currentState = "overview"
+    fetchData();
+    changeBtn();
+}
+
+function structureBtn() {
+    currentState = "structure"
+    fetchData();
+    changeBtn();
+}
+
+function geologyBtn() {
+    currentState = "geology"
+    fetchData();
+    changeBtn();
+}
+
+
+
+
+function displayPlanetInfo() {
+    
+
+}
+
+displayPlanetInfo();
