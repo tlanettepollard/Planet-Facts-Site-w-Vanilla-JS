@@ -27,7 +27,7 @@ Resources:
 
 ### 09/04/2021
 
-Today I am working on the responsive navbar. I used a tutorial on dev.to. Posted link yesterday. I was able to add transition and have the mobileNav as an offcanvas menu. I am referring to a fellow coder for importing data into the website. I also researched DOM style using JS. 
+Today I am working on the responsive navbar. I used a tutorial on dev.to. Posted link yesterday. I was able to add transition and have the mobileNav as an offcanvas menu. I am referring to a fellow coder for importing data into the website. I also researched DOM style using JS.
 
 Resources:
 [Planets Fact Site](https://github.com/KevinGBojan/planets-fact-site) by Kevin G Bojan
@@ -35,4 +35,12 @@ Resources:
 
 ### 09/05/2021
 
-I searched to find an alternative to using `onClick` in my HTML. I was having a hard time finding a way to set up the addEventListener. I will keep searching. 
+I searched to find an alternative to using `onClick` in my HTML. I was having a hard time finding a way to set up the addEventListener. I will keep searching.
+
+### 09/12/2021
+
+Working on my JS and using the data.json to load information into the webpage.
+
+Resources:
+[Fetch API & Rendering Data with Javascript](https://youtu.be/FN_ffvw_ksE) by Hunter Chang
+[JavaScript Template Literals: JSON to HTML](https://youtu.be/DG4obitDvUA) by LearnWebCode

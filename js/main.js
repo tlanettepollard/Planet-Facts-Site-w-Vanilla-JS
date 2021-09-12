@@ -85,24 +85,20 @@ const geologySize = {
     small: "50px 58.28px"
 }
 
+
+
+
 // Get information from data.json
-/*let data;
-
 function fetchData() {
-    if (typeof data === 'undefined') {
-        fetch('data.json').then(response => response.json()).then(json => {
-            data = json;
-            displayInfo();
+    fetch('/data.json')
+        .then(response => {
+            return response.json();
+        })
+        .then(data => {
+            console.log(data);
+        }).catch(error => {
+            console.log(error);
         });
-    }
-    else displayInfo();
 }
-
-let currentPlanet = 0;
-let currentState = 'overview';
-
 fetchData();
-changeBtn(); */
-
-
 
