@@ -183,6 +183,8 @@ h4 {
 }
 .description .description-mobile .btn-mobile {
   background-color: transparent;
+  cursor: pointer;
+  border-bottom: 5px solid transparent;
 }
 
 #bottom-section {
