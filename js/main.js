@@ -42,6 +42,7 @@ const geology = document.querySelector('.btn-geology');
 const vw = document.documentElement.clientWidth; // For window breakpoints
 
 
+
 // Objects for planet information
 const planets = {
     0: 'mercury',
@@ -93,20 +94,21 @@ changeBtn();
 
 
 // Get information from data.json
+let data;
 function fetchData() {
-    if (typeof data === "undefined") {
-        fetch('/data.json')
-            .then(response => response.json())
-            .then(json => {
-                //console.log(data);
-                data = json;
-                displayPlanetInfo();
-            }).catch(error => {
-                console.log(error);
-            });
-    }
-    else displayPlanetInfo();
-} 
+    fetch('data.json').then(response => {
+        if (!response.ok) {
+            throw Error("ERROR");
+        }
+        return response.json();
+    })
+        .then(json => {
+            data = json;
+            //console.log(data);
+            displayPlanetInfo();
+        });
+    
+}
 
 fetchData();
 
@@ -153,8 +155,12 @@ function geologyBtn() {
 
 
 function displayPlanetInfo() {
-    
-
+    /*planetName.innerText = data[currentPlanet].name;
+    rotation.innerText = data[currentPlanet].rotation;
+    revolution.innerText = data[currentPlanet].revolution;
+    radius.innerText = data[currentPlanet].radius;
+    temperature.innerText = data[currentPlanet].temperature;
+    console.log(planetName);*/
 }
 
 displayPlanetInfo();

@@ -44,3 +44,7 @@ Working on my JS and using the data.json to load information into the webpage.
 Resources:
 [Fetch API & Rendering Data with Javascript](https://youtu.be/FN_ffvw_ksE) by Hunter Chang
 [JavaScript Template Literals: JSON to HTML](https://youtu.be/DG4obitDvUA) by LearnWebCode
+
+### 09/16/2021
+
+Still having issues about how to organize my code. I get so caught up in how I should do it that I get stuck in my head.
