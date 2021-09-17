@@ -43,7 +43,6 @@ const geology = document.querySelector('.btn-geology');
 const vw = document.documentElement.clientWidth; // For window breakpoints
 
 
-
 var data;
 
 // Get information from data.json
