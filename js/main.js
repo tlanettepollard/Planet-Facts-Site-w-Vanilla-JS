@@ -35,9 +35,9 @@ const radius = document.querySelector('.radius');
 const temperature = document.querySelector('.average-temp');
 
 // Buttons
-const overview = document.querySelector('.btn-overview');
-const structure = document.querySelector('.btn-structure');
-const geology = document.querySelector('.btn-geology');
+const planetOverview = document.querySelector('.btn-overview');
+const planetStructure = document.querySelector('.btn-structure');
+const planetGeology = document.querySelector('.btn-geology');
 
 
 const vw = document.documentElement.clientWidth; // For window breakpoints
@@ -63,4 +63,8 @@ function fetchData() {
     //else displayPlanetInfo();
 }
 fetchData();
+
+let currentPlanet = 0;
+let currentState = "planetOverview";
+
 
