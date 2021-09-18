@@ -35,16 +35,14 @@
         }
     }
 
-    #top-section-right--bottom {
-        .description-buttons {
-            .btn {
-                background-color: transparent;
-            }
+    &-tablet {
+        .btn {
+            cursor: pointer;
         }
         
     }
 
-    .description-mobile {
+    &-mobile {
         .btn-mobile {
             background-color: transparent;
             cursor: pointer;
