@@ -162,3 +162,97 @@ Radius
 
 Average Temp.
 471°c
+
+// Objects for planet information
+const planets = {
+0: 'mercury',
+1: 'venus',
+2: 'earth',
+3: 'mars',
+4: 'jupiter',
+5: 'saturn',
+6: 'uranus',
+7: 'neptune'
+}
+
+// Colors based on planets
+const btnColors = {
+0: '419EBB',
+1: 'EDA249',
+2: '6D2ED5',
+3: 'D14C32',
+4: 'D83A34',
+5: 'CD5120',
+6: '1EC1A2',
+7: '2D68F0'
+}
+
+// Planet image sizes by breakpoint
+const planetSize = {
+0: { large: "290px", medium: "184px", small: "111px"},
+1: { large: "400px", medium: "253px", small: "154px" },
+2: { large: "450px", medium: "285px", small: "173px" },
+3: { large: "336px", medium: "213px", small: "129px" },
+4: { large: "582px", medium: "369px", small: "224px" },
+5: { large: "666.09px", medium: "422px", small: "256px" },
+6: { large: "458px", medium: "290px", small: "176px" },
+7: { large: "450px", medium: "285px", small: "173px" }
+}
+
+// Geology images sizes
+const geologySize = {
+large: "163px 199px",
+medium: "80px 93.25px",
+small: "50px 58.28px"
+}
+
+Venus
+
+  <!-- Overview Content Start -->
+
+Venus is the second planet from the Sun. It is named after the
+Roman goddess of love and beauty. As the brightest natural object
+in Earth's night sky after the Moon, Venus can cast shadows and
+can be, on rare occasions, visible to the naked eye in broad daylight.
+
+Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Venus -->
+
+  <!-- Overview Content End -->
+
+  <!-- Internal Structure Content Start -->
+
+The similarity in size and density between Venus and Earth suggests
+they share a similar internal structure: a core, mantle, and crust.
+Like that of Earth, Venusian core is most likely at least partially
+liquid because the two planets have been cooling at about the same rate.
+
+Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Venus#Internal_structure -->
+
+  <!-- Internal Structure Content End -->
+
+  <!-- Surface Geology Content Start -->
+
+Much of the Venusian surface appears to have been shaped by volcanic activity.
+Venus has several times as many volcanoes as Earth, and it has 167 large
+volcanoes that are over 100 km (60 mi) across. The only volcanic complex
+of this size on Earth is the Big Island of Hawaii.
+
+Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Venus#Surface_geology -->
+
+  <!-- Surface Geology Content End -->
+
+01 Overview
+02 Internal Structure
+03 Surface Geology
+
+Rotation Time
+243 Days
+
+Revolution Time
+224.7 Days
+
+Radius
+6,051.8 KM
+
+Average Temp.
+471°c
