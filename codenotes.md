@@ -48,3 +48,10 @@ Resources:
 ### 09/16/2021
 
 Still having issues about how to organize my code. I get so caught up in how I should do it that I get stuck in my head.
+
+### 09/18/2021
+
+Still working on my JS. I got the data to appear in my HTML. Now I need to work on my links. Trying to figure out the correct logic.
+
+Resources:
+[Planet Facts Site](https://github.com/nithinmanoj10/Planets-Fact-Site) by Nithinmanoj10
