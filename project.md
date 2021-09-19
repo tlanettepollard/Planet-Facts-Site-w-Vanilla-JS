@@ -346,3 +346,316 @@ temperature.innerText = data[currentPlanet].temperature;
     }
 
 }
+
+---
+
+Uranus
+
+  <!-- Overview Content Start -->
+
+Uranus is the seventh planet from the Sun. Its name is a reference to the
+Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather
+of Ares. It has the third-largest planetary radius and fourth-largest planetary
+mass in the Solar System.
+
+Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Uranus -->
+
+  <!-- Overview Content End -->
+
+  <!-- Internal Structure Content Start -->
+
+The standard model of Uranus's structure is that it consists of three layers: a
+rocky (silicate/iron–nickel) core in the centre, an icy mantle in the middle and
+an outer gaseous hydrogen/helium envelope. The core is relatively small, with a
+mass of only 0.55 Earth masses.
+
+Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Uranus#Internal_structure -->
+
+  <!-- Internal Structure Content End -->
+
+  <!-- Surface Geology Content Start -->
+
+The composition of Uranus's atmosphere is different from its bulk, consisting mainly
+of molecular hydrogen and helium. The helium molar fraction, i.e. the number of
+helium atoms per molecule of gas, is 0.15±0.03 in the upper troposphere.
+
+Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Uranus#Atmosphere -->
+
+  <!-- Surface Geology Content End -->
+
+01 Overview
+02 Internal Structure
+03 Surface Geology
+
+Rotation Time
+17.2 Hours
+
+Revolution Time
+84 Years
+
+Radius
+25,362 KM
+
+Average Temp.
+-195°c
+
+---
+
+Earth
+
+  <!-- Overview Content Start -->
+
+Third planet from the Sun and the only known planet to harbor life.
+About 29.2% of Earth's surface is land with remaining 70.8% is
+covered with water. Earth's distance from the Sun, physical properties
+and geological history have allowed life to evolve and thrive.
+
+Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth -->
+
+  <!-- Overview Content End -->
+
+  <!-- Internal Structure Content Start -->
+
+Earth's interior, like that of the other terrestrial planets, is divided
+into layers by their chemical or physical (rheological) properties. The
+outer layer is a chemically distinct silicate solid crust, which is
+underlain by a highly viscous solid mantle.
+
+Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth#Internal_structure -->
+
+  <!-- Internal Structure Content End -->
+
+  <!-- Surface Geology Content Start -->
+
+The total surface area of Earth is about 510 million km2. The continental
+crust consists of lower density material such as the igneous rocks granite
+and andesite. Less common is basalt, a denser volcanic rock that is the
+primary constituent of the ocean floors.
+
+Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth#Surface -->
+
+  <!-- Surface Geology Content End -->
+
+01 Overview
+02 Internal Structure
+03 Surface Geology
+
+Rotation Time
+0.99 Days
+
+Revolution Time
+365.26 Days
+
+Radius
+6,371 KM
+
+Average Temp.
+16°c
+
+---
+
+Jupiter
+
+  <!-- Overview Content Start -->
+
+Jupiter is the fifth planet from the Sun and the largest in the Solar System.
+It is a gas giant with a mass two and a half times that of all the other
+planets in the Solar System combined, but less than one-thousandth the mass
+of the Sun.
+
+Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Jupiter -->
+
+  <!-- Overview Content End -->
+
+  <!-- Internal Structure Content Start -->
+
+When the Juno arrived in 2016, it found that Jupiter has a very diffuse core
+that mixes into its mantle. A possible cause is an impact from a planet of
+about ten Earth masses a few million years after Jupiter's formation, which
+would have disrupted an originally solid Jovian core.
+
+Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Jupiter#Internal_structure -->
+
+  <!-- Internal Structure Content End -->
+
+  <!-- Surface Geology Content Start -->
+
+The best known feature of Jupiter is the Great Red Spot, a persistent
+anticyclonic storm located 22° south of the equator. It is known to have
+existed since at least 1831, and possibly since 1665.
+
+Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Jupiter#Great_Red_Spot_and_other_vortices -->
+
+  <!-- Surface Geology Content End -->
+
+01 Overview
+02 Internal Structure
+03 Surface Geology
+
+Rotation Time
+9.93 Hours
+
+Revolution Time
+11.86 Years
+
+Radius
+69,911 KM
+
+Average Temp.
+-108°c
+
+---
+
+Mars
+
+  <!-- Overview Content Start -->
+
+Mars is the fourth planet from the Sun and the second-smallest planet
+in the Solar System, being larger than only Mercury. In English, Mars
+carries the name of the Roman god of war and is often referred to as
+the "Red Planet".
+
+Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mars -->
+
+  <!-- Overview Content End -->
+
+  <!-- Internal Structure Content Start -->
+
+Like Earth, Mars has differentiated into a dense metallic core overlaid
+by less dense materials. Scientists initially determined that the core
+is at least partially liquid. Current models of its interior imply a
+core consisting primarily of iron and nickel with about 16–17% sulfur.
+
+Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mars#Internal_structure -->
+
+  <!-- Internal Structure Content End -->
+
+  <!-- Surface Geology Content Start -->
+
+Mars is a terrestrial planet whose surface consists of minerals containing
+silicon and oxygen, metals, and other elements that typically make up rock.
+The surface is primarily composed of tholeiitic basalt, although parts are
+more silica-rich than typical basalt.
+
+Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mars#Surface_geology -->
+
+  <!-- Surface Geology Content End -->
+
+01 Overview
+02 Internal Structure
+03 Surface Geology
+
+Rotation Time
+1.03 Days
+
+Revolution Time
+1.88 Years
+
+Radius
+3,389.5 KM
+
+Average Temp.
+-28°c
+
+---
+
+Neptune
+
+  <!-- Overview Content Start -->
+
+Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar
+System, it is the fourth-largest planet by diameter, the third-most-massive planet,
+and the densest giant planet. It is 17 times the mass of Earth, more massive than
+its near-twin Uranus.
+
+Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune -->
+
+  <!-- Overview Content End -->
+
+  <!-- Internal Structure Content Start -->
+
+Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5%
+to 10% of its mass and extends perhaps 10% to 20% of the way towards the core.
+Increasing concentrations of methane, ammonia and water are found in the lower regions.
+
+Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune#Internal_structure -->
+
+  <!-- Internal Structure Content End -->
+
+  <!-- Surface Geology Content Start -->
+
+Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also
+present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in
+the red and infrared portion of the spectrum.
+
+Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune#Atmosphere -->
+
+  <!-- Surface Geology Content End -->
+
+01 Overview
+02 Internal Structure
+03 Surface Geology
+
+Rotation Time
+16.08 Hours
+
+Revolution Time
+164.79 Years
+
+Radius
+24,622 KM
+
+Average Temp.
+-201°c
+
+******
+Saturn
+
+  <!-- Overview Content Start -->
+
+  Saturn is the sixth planet from the Sun and the second-largest in the Solar 
+  System, after Jupiter. It is a gas giant with an average radius of about 
+  nine and a half times that of Earth. It only has one-eighth the average 
+  density of Earth.
+
+  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn -->
+
+  <!-- Overview Content End -->
+
+  <!-- Internal Structure Content Start -->
+
+  Despite consisting mostly of hydrogen and helium, most of Saturn's mass 
+  is not in the gas phase, because hydrogen becomes a non-ideal liquid 
+  when the density is above 0.01 g/cm3, which is reached at a radius 
+  containing 99.9% of Saturn's mass.
+
+  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn#Internal_structure -->
+
+  <!-- Internal Structure Content End -->
+
+  <!-- Surface Geology Content Start -->
+
+  The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% 
+  helium by volume. The planet's most famous feature is its prominent ring 
+  system, which is composed mostly of ice particles with a smaller amount 
+  of rocky debris and dust. 
+
+  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn#Atmosphere -->
+
+  <!-- Surface Geology Content End -->
+
+  01 Overview
+  02 Internal Structure
+  03 Surface Geology
+
+  Rotation Time
+  10.8 Hours
+
+  Revolution Time
+  29.46 Years
+
+  Radius
+  58,232 KM
+
+  Average Temp.
+  -138°c

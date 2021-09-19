@@ -58,4 +58,4 @@ Resources:
 
 ### 09/19/2021
 
-I'm starting again. I've made this too difficult and I'm becoming frustrated.
+I'm starting again. I've made this too difficult and I'm becoming frustrated. I added the page links to my index.html. Now I will just use JS to add the information. 
