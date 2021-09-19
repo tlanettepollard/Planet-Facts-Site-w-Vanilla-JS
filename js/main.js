@@ -23,6 +23,7 @@ function closeMenu() {
 // Variables
 
 // Facts
+const main = document.querySelector('.main');
 const planetLinks = document.querySelector('.nav__link');
 const planetName = document.querySelector('.planet-title');
 const planetImage = document.querySelector('.planet-image');
@@ -33,36 +34,22 @@ const revolution = document.querySelector('.revolution-time');
 const radius = document.querySelector('.radius-size');
 const temperature = document.querySelector('.average-temp');
 
-// Buttons
-const planetOverview = document.querySelector('.btn-overview');
-const planetStructure = document.querySelector('.btn-structure');
-const planetGeology = document.querySelector('.btn-geology');
+// Buttons Tablet
+const overview = document.getElementById('overview');
+const structure = document.getElementById('structure');
+const geology = document.getElementById('.geology');
+
+//Buttons Mobile
+const overviewMobileBtn = document.getElementById('overview-mobile');
+const structureMobileBtn = document.getElementById('structure-mobile');
+const geologyMobileBtn = document.getElementById('geology-mobile');
 
 // Breakpoints
 const vw = document.documentElement.clientWidth; // For window breakpoints
 
-const planets = {
-    0: "mercury",
-    1: "venus",
-    2: "earth",
-    3: "mars",
-    4: "jupiter",
-    5: "saturn",
-    6: "uranus",
-    7: "neptune"
-}
 
-let currentPlanet = 0;
-let currentState = "planetOverview";
-
-
-
-
-
-fetchData();
-
-
-
+let planetsData;
+let currentPlanet;
 
 // Get data.json
 
@@ -71,87 +58,18 @@ function fetchData() {
         fetch('/data.json')
             .then(response => response.json())
             .then(json => {
-                //console.log(json);
                 data = json;
-                displayPlanetInfo();
+                planetsData = data;
+                console.log(planetsData);
             }).catch(error => {
                 console.log(error);
             });
     }
-    else displayPlanetInfo();
 }
 fetchData();
 
 
-function displayPlanetInfo() {
-    planetName.innerText = data[currentPlanet].name;
-    rotation.innerText = data[currentPlanet].rotation;
-    revolution.innerText = data[currentPlanet].revolution;
-    radius.innerText = data[currentPlanet].radius;
-    temperature.innerText = data[currentPlanet].temperature;
 
-    if (currentState == "planetOverview") {
-        planetDesc.innerText = data[currentPlanet].overview.content;
-        source.href = data[currentPlanet].overview.source;
-        planetImage.style.background = `url('/assets/planet-${planets[currentPlanet]}.svg')`;
-        planetImage.style.backgroundRepeat = 'no-repeat';
-        planetImage.style.backgroundPosition = 'center';
 
-        if (vw > 992) {
-            planetImage.style.backgroundSize = `${data[currentPlanet].size.large}`, `${data[currentPlanet].size.large}`;
-            planetImage.style.height = `${data[currentPlanet].size.large}`;
-            planetImage.style.width = `${data[currentPlanet].size.large}`;
-        } else if (vw<=992 && vw>=768) {
-            planetImage.style.backgroundSize = `${data[currentPlanet].size.medium}`, `${data[currentPlanet].size.medium}`;
-            planetImage.style.height = `${data[currentPlanet].size.medium}`;
-            planetImage.style.width = `${data[currentPlanet].size.medium}`;
-        } else {
-            planetImage.style.backgroundSize = `${data[currentPlanet].size.small}`, `${data[currentPlanet].size.small}`;
-            planetImage.style.height = `${data[currentPlanet].size.small}`;
-            planetImage.style.width = `${data[currentPlanet].size.small}`;
-        }
-    } else if (currentState == "planetStructure") {
-        planetDesc.innerText = data[currentPlanet].structure.content;
-        source.href = data[currentPlanet].structure.source;
-        planetImage.style.background = `url('/assets/planet-${planets[currentPlanet]}-internal.svg')`;
-        planetImage.style.backgroundRepeat = 'no-repeat';
-        planetImage.style.backgroundPosition = 'center';
-
-        if (vw > 992) {
-            planetImage.style.backgroundSize = `${data[currentPlanet].size.large}`, `${data[currentPlanet].size.large}`;
-            planetImage.style.height = `${data[currentPlanet].size.large}`;
-            planetImage.style.width = `${data[currentPlanet].size.large}`;
-        } else if (vw<=992 && vw>=768) {
-            planetImage.style.backgroundSize = `${data[currentPlanet].size.medium}`, `${data[currentPlanet].size.medium}`;
-            planetImage.style.height = `${data[currentPlanet].size.medium}`;
-            planetImage.style.width = `${data[currentPlanet].size.medium}`;
-        } else {
-            planetImage.style.backgroundSize = `${data[currentPlanet].size.small}`, `${data[currentPlanet].size.small}`;
-            planetImage.style.height = `${data[currentPlanet].size.small}`;
-            planetImage.style.width = `${data[currentPlanet].size.small}`;
-        }
-    } else {
-        planetDesc.innerText = data[currentPlanet].geology.content;
-        source.href = data[currentPlanet].geology.source;
-        planetImage.style.background = `url('/assets/geology-${planets[currentPlanet]}.png'), url('/assets/planet-${planets[currentPlanet]}.svg')`;
-        planetImage.style.backgroundRepeat = 'no-repeat';
-        planetImage.style.backgroundPosition = 'center';
-
-        if (vw > 992) {
-            planetImage.style.backgroundSize = `${data[currentPlanet].geologySize.large}, ${data[currentPlanet].size.large}`, `${data[currentPlanet].size.large}`;
-            planetImage.style.height = `${data[currentPlanet].size.large}`;
-            planetImage.style.width = `${data[currentPlanet].size.large}`;
-        } else if (vw<=992 && vw>=768) {
-            planetImage.style.backgroundSize = `${data[currentPlanet].geologySize.medium}, ${data[currentPlanet].size.medium}`, `${data[currentPlanet].size.medium}`;
-            planetImage.style.height = `${data[currentPlanet].size.medium}`;
-            planetImage.style.width = `${data[currentPlanet].size.medium}`;
-        } else {
-            planetImage.style.backgroundSize = `${data[currentPlanet].geologySize.small}, ${data[currentPlanet].size.small}`, `${data[currentPlanet].size.small}`;
-            planetImage.style.height = `${data[currentPlanet].size.small}`;
-            planetImage.style.width = `${data[currentPlanet].size.small}`;
-        }
-    }
-
-}
 
 

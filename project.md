@@ -256,3 +256,93 @@ Radius
 
 Average Temp.
 471°c
+
+Nithinmanoj10
+// Get planet object from data.json depending on which linked was clicked
+const getPlanetData = function (links) {
+links.forEach(function (link) {
+link.addEventListener('click', function (clickedLink) {
+main.style.height = "100%";
+planetLink = clickedLink.target;
+planetsData.forEach(function (planetObject) {
+if (planetObject.name == planetLink.text) {
+currentPlanet = planetObject;
+displayPlanetInfo(planetObject);
+changeActiveMain(planetLink);
+}
+});
+});
+});
+};
+
+displayPlanetInfo
+function displayPlanetInfo() {
+planetName.innerHTML = planetsData[currentPlanet].name;
+rotation.innerText = data[currentPlanet].rotation;
+revolution.innerText = data[currentPlanet].revolution;
+radius.innerText = data[currentPlanet].radius;
+temperature.innerText = data[currentPlanet].temperature;
+
+    if (currentState == "planetOverview") {
+        planetDesc.innerText = data[currentPlanet].overview.content;
+        source.href = data[currentPlanet].overview.source;
+        planetImage.style.background = `url('/assets/planet-${planets[currentPlanet]}.svg')`;
+        planetImage.style.backgroundRepeat = 'no-repeat';
+        planetImage.style.backgroundPosition = 'center';
+
+        if (vw > 992) {
+            planetImage.style.backgroundSize = `${data[currentPlanet].size.large}`, `${data[currentPlanet].size.large}`;
+            planetImage.style.height = `${data[currentPlanet].size.large}`;
+            planetImage.style.width = `${data[currentPlanet].size.large}`;
+        } else if (vw<=992 && vw>=768) {
+            planetImage.style.backgroundSize = `${data[currentPlanet].size.medium}`, `${data[currentPlanet].size.medium}`;
+            planetImage.style.height = `${data[currentPlanet].size.medium}`;
+            planetImage.style.width = `${data[currentPlanet].size.medium}`;
+        } else {
+            planetImage.style.backgroundSize = `${data[currentPlanet].size.small}`, `${data[currentPlanet].size.small}`;
+            planetImage.style.height = `${data[currentPlanet].size.small}`;
+            planetImage.style.width = `${data[currentPlanet].size.small}`;
+        }
+    } else if (currentState == "planetStructure") {
+        planetDesc.innerText = data[currentPlanet].structure.content;
+        source.href = data[currentPlanet].structure.source;
+        planetImage.style.background = `url('/assets/planet-${planets[currentPlanet]}-internal.svg')`;
+        planetImage.style.backgroundRepeat = 'no-repeat';
+        planetImage.style.backgroundPosition = 'center';
+
+        if (vw > 992) {
+            planetImage.style.backgroundSize = `${data[currentPlanet].size.large}`, `${data[currentPlanet].size.large}`;
+            planetImage.style.height = `${data[currentPlanet].size.large}`;
+            planetImage.style.width = `${data[currentPlanet].size.large}`;
+        } else if (vw<=992 && vw>=768) {
+            planetImage.style.backgroundSize = `${data[currentPlanet].size.medium}`, `${data[currentPlanet].size.medium}`;
+            planetImage.style.height = `${data[currentPlanet].size.medium}`;
+            planetImage.style.width = `${data[currentPlanet].size.medium}`;
+        } else {
+            planetImage.style.backgroundSize = `${data[currentPlanet].size.small}`, `${data[currentPlanet].size.small}`;
+            planetImage.style.height = `${data[currentPlanet].size.small}`;
+            planetImage.style.width = `${data[currentPlanet].size.small}`;
+        }
+    } else {
+        planetDesc.innerText = data[currentPlanet].geology.content;
+        source.href = data[currentPlanet].geology.source;
+        planetImage.style.background = `url('/assets/geology-${planets[currentPlanet]}.png'), url('/assets/planet-${planets[currentPlanet]}.svg')`;
+        planetImage.style.backgroundRepeat = 'no-repeat';
+        planetImage.style.backgroundPosition = 'center';
+
+        if (vw > 992) {
+            planetImage.style.backgroundSize = `${data[currentPlanet].geologySize.large}, ${data[currentPlanet].size.large}`, `${data[currentPlanet].size.large}`;
+            planetImage.style.height = `${data[currentPlanet].size.large}`;
+            planetImage.style.width = `${data[currentPlanet].size.large}`;
+        } else if (vw<=992 && vw>=768) {
+            planetImage.style.backgroundSize = `${data[currentPlanet].geologySize.medium}, ${data[currentPlanet].size.medium}`, `${data[currentPlanet].size.medium}`;
+            planetImage.style.height = `${data[currentPlanet].size.medium}`;
+            planetImage.style.width = `${data[currentPlanet].size.medium}`;
+        } else {
+            planetImage.style.backgroundSize = `${data[currentPlanet].geologySize.small}, ${data[currentPlanet].size.small}`, `${data[currentPlanet].size.small}`;
+            planetImage.style.height = `${data[currentPlanet].size.small}`;
+            planetImage.style.width = `${data[currentPlanet].size.small}`;
+        }
+    }
+
+}
