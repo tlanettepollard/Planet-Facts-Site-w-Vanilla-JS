@@ -24,7 +24,7 @@ function closeMenu() {
 
 // Facts
 const main = document.querySelector('.main');
-const planetLinks = document.querySelector('.nav__link');
+const planetLink = document.querySelector('.nav__link');
 const planetName = document.querySelector('.planet-title');
 const planetImage = document.querySelector('.planet-image');
 const planetDesc = document.querySelector('.planet-text');
@@ -46,30 +46,35 @@ const geologyMobileBtn = document.getElementById('geology-mobile');
 
 // Breakpoints
 const vw = document.documentElement.clientWidth; // For window breakpoints
-
+// Miscellaneous
+//const planetIndex = 0;
 
 let planetsData;
-let currentPlanet;
+let currentPlanet
+let currentState = "overview";
 
 // Get data.json
-
 function fetchData() {
-    if (typeof data === 'undefined') {
-        fetch('/data.json')
-            .then(response => response.json())
-            .then(json => {
-                data = json;
-                planetsData = data;
-                console.log(planetsData);
-            }).catch(error => {
-                console.log(error);
-            });
-    }
+    if(typeof data == "undefined"){
+    fetch('/data.json').then(response => response.json())
+        .then(data => {
+            planetsData = data;
+            //console.log(planetsData)
+            displayPlanetInfo();
+
+        }).catch(error => {
+            console.log(error);
+        });
+    }   
 }
 fetchData();
 
+// Get planet information depending on link clicked
 
+function displayPlanetInfo() {
+    
+}
 
-
+displayPlanetInfo();
 
 
