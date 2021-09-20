@@ -55,3 +55,7 @@ Still working on my JS. I got the data to appear in my HTML. Now I need to work 
 
 Resources:
 [Planet Facts Site](https://github.com/nithinmanoj10/Planets-Fact-Site) by Nithinmanoj10
+
+### 09/19/2021
+
+I'm starting again. I've made this too difficult and I'm becoming frustrated. I added the page links to my index.html. Now I will just use JS to add the information. 
