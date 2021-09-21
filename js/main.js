@@ -54,99 +54,24 @@ let currentPlanet = 0;
 let currentState = "overview";
 
 // Get data.json
-function fetchData() {
-    if (typeof data === 'undefined') {
-        fetch('/data.json').then((response) => response.json())
-            .then((data) => {
-                planetsData = data;
-                //console.log(planetsData)
-                displayPlanetData();
-            });
-    }
-    else displayPlanetData();
-}
+fetch('/data.json').then(response => response.json())
+    .then(json => {
+        data = json;
+        planetsData = data;
+        console.log(planetsData);
+        //displayPlanetInfo();
 
-fetchData();
+    }).catch(error => {
+        console.log('error: ' + error);
+    });
 
-// Render planet information
-
-function displayPlanetData() {
-    planetName.innerHTML = planetsData[currentPlanet].name;
-    rotation.innerHTML = planetsData[currentPlanet].rotation;
-    revolution.innerHTML = planetsData[currentPlanet].revolution;
-    radius.innerHTML = planetsData[currentPlanet].radius;
-    temperature.innerHTML = planetsData[currentPlanet].temperature;
-
-    // Overview State
-    if (currentState === "overview") {
-        planetDesc.innerHTML = planetsData[currentPlanet].overview.content;
-        source.href = planetsData[currentPlanet].overview.source;
-        planetImage.style.background = `url("${planetsData[currentPlanet].images.planet}")`;
-        planetImage.style.backgroundRepeat = 'no-repeat';
-        planetImage.style.backgroundPosition = 'center';
-
-        if (vw > 992) {
-            planetImage.style.backgroundSize = `${planetsData[currentPlanet].size.large}`, `${planetsData[currentPlanet].size.large}`;
-            planetImage.style.height = `${planetsData[currentPlanet].size.large}`;
-            planetImage.style.width = `${planetsData[currentPlanet].size.large}`;
-        } else if (vw <= 992 && vw >= 768) {
-            planetImage.style.backgroundSize = `${planetsData[currentPlanet].size.medium}`, `${planetsData[currentPlanet].size.medium}`;
-            planetImage.style.height = `${planetsData[currentPlanet].size.medium}`;
-            planetImage.style.width = `${planetsData[currentPlanet].size.medium}`;
-        } else {
-            planetImage.style.backgroundSize = `${planetsData[currentPlanet].size.small}`, `${planetsData[currentPlanet].size.small}`;
-            planetImage.style.height = `${planetsData[currentPlanet].size.small}`;
-            planetImage.style.width = `${planetsData[currentPlanet].size.small}`;
-        }
-
-        // Structure State
-    } else if (currentState === "structure") {
-        planetDesc.innerHTML = planetsData[currentPlanet].structure.content;
-        source.href = planetsData[currentPlanet].structure.source;
-        planetImage.style.background = `url("${planetsData[currentPlanet].images.internal}")`;
-        planetImage.style.backgroundRepeat = 'no-repeat';
-        planetImage.style.backgroundPosition = 'center';
-
-        if (vw > 992) {
-            planetImage.style.backgroundSize = `${planetsData[currentPlanet].size.large}`, `${planetsData[currentPlanet].size.large}`;
-            planetImage.style.height = `${planetsData[currentPlanet].size.large}`;
-            planetImage.style.width = `${planetsData[currentPlanet].size.large}`;
-        } else if (vw <= 992 && vw >= 768) {
-            planetImage.style.backgroundSize = `${planetsData[currentPlanet].size.medium}`, `${planetsData[currentPlanet].size.medium}`;
-            planetImage.style.height = `${planetsData[currentPlanet].size.medium}`;
-            planetImage.style.width = `${planetsData[currentPlanet].size.medium}`;
-        } else {
-            planetImage.style.backgroundSize = `${planetsData[currentPlanet].size.small}`, `${planetsData[currentPlanet].size.small}`;
-            planetImage.style.height = `${planetsData[currentPlanet].size.small}`;
-            planetImage.style.width = `${planetsData[currentPlanet].size.small}`;
-        }
-
-        // Geology State
-    } else {
-        planetDesc.innerHTML = planetsData[currentPlanet].geology.content;
-        source.href = planetsData[currentPlanet].geology.source;
-        planetImage.style.background = `url("${planetsData[currentPlanet].images.geology}")`, `url("${planetsData[currentPlanet].images.planet}")`;
-        planetImage.style.backgroundRepeat = 'no-repeat, no-repeat';
-        planetImage.style.backgroundPosition = '50% 100%, center';
-
-        if (vw > 992) {
-            planetImage.style.backgroundSize = `${planetsData[currentPlanet].size.large}`, `${planetsData[currentPlanet].size.large}`;
-            planetImage.style.height = `${planetsData[currentPlanet].size.large}`;
-            planetImage.style.width = `${planetsData[currentPlanet].size.large}`;
-        } else if (vw <= 992 && vw >= 768) {
-            planetImage.style.backgroundSize = `${planetsData[currentPlanet].size.medium}`, `${planetsData[currentPlanet].size.medium}`;
-            planetImage.style.height = `${planetsData[currentPlanet].size.medium}`;
-            planetImage.style.width = `${planetsData[currentPlanet].size.medium}`;
-        } else {
-            planetImage.style.backgroundSize = `${planetsData[currentPlanet].size.small}`, `${planetsData[currentPlanet].size.small}`;
-            planetImage.style.height = `${planetsData[currentPlanet].size.small}`;
-            planetImage.style.width = `${planetsData[currentPlanet].size.small}`;
-        }
-    } 
-
-    
+const getPlanetData = function (links) {
+    links.forEach.key(link => {
+        link.addEventListener('click', function (clickedLink) {
+            
+        })
+    }) 
 }
 
 
-
-
+  
