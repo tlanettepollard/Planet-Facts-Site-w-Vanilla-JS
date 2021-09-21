@@ -50,31 +50,40 @@ const vw = document.documentElement.clientWidth; // For window breakpoints
 //const planetIndex = 0;
 
 let planetsData;
-let currentPlanet
+let currentPlanet = 0;
 let currentState = "overview";
 
 // Get data.json
 function fetchData() {
-    if(typeof data == "undefined"){
-    fetch('/data.json').then(response => response.json())
-        .then(data => {
-            planetsData = data;
-            //console.log(planetsData)
-            displayPlanetInfo();
-
-        }).catch(error => {
-            console.log(error);
-        });
-    }   
+    if (typeof data === 'undefined') {
+        fetch('/data.json').then((response) => response.json())
+            .then((data) => {
+                planetsData = data;
+                //console.log(planetsData)
+                displayPlanetData();
+            });
+    }
+    else displayPlanetData();
 }
+
 fetchData();
 
-// Get planet information depending on link clicked
+// Render planet information
 
-function displayPlanetInfo() {
-    
+function displayPlanetData() {
+    planetName.innerHTML = planetsData[currentPlanet].name;
+    rotation.innerHTML = planetsData[currentPlanet].rotation;
+    revolution.innerHTML = planetsData[currentPlanet].revolution;
+    radius.innerHTML = planetsData[currentPlanet].radius;
+    temperature.innerHTML = planetsData[currentPlanet].temperature;
+
+    if (currentState === "overview") {
+        planetDesc.innerHTML = planetsData[currentPlanet].overview.content;
+        source.href = planetsData[currentPlanet].overview.source;
+
+    }
 }
 
-displayPlanetInfo();
+
 
 
