@@ -16,12 +16,12 @@
       <nav class="navbar" aria-label="Main menu">
         <div class="navbar__header">
           <h2 class="h2-title navbar__header-title">The Planets</h2>
-          <button type="button" class="hamburger-btn">
+          <button type="button" class="hamburger-btn" aria-label="mobile-menu">
             <img id="button" class="hamburger-btn--icon" src="assets/icon-hamburger.svg"  alt="menu open">
           </button>
         </div>
         
-        <ul aria-labelledby="main-menu-links" class="navbar__menu">
+        <ul class="navbar__menu">
           <li class="navbar__menu-item  nav__item--mercury">
             <div>
               <img src="assets/mercury-circle.png" class="planet-icon" alt="planet icon">
@@ -104,20 +104,20 @@
         <div id="top-section-right">
           <div class="description-planet">
             <h1 id="main-title" class="description-title planet-title h1-title"></h1>
-              <p id="main-text" class="description-text planet-text"></p>
-              <p>Source: 
+              <p id="main-text" class="description-text planet-text body-text"></p>
+              <p class="body-text">Source: 
                 <a class="source-link" href="" target="_blank">Wikipedia</a>
               </p>
           </div>
         
           <div class="top-section-right--bottom  description-tablet planet">
-            <button id="overview" class="btn btn-overview">
+            <button id="overview" class="btn btn-overview" role="tab" aria-selected="true">
               <h3 class="h3-title"><span class="span-number">01</span>Overview</h3>
             </button>
-            <button id="structure" class="btn btn-structure">
+            <button id="structure" class="btn btn-structure" role="tab" aria-selected="false">
               <h3 class="h3-title"><span class="span-number">02</span>Structure</h3>
             </button>
-            <button id="geology" class="btn btn-geology">
+            <button id="geology" class="btn btn-geology" role="tab" aria-selected="false">
               <h3 class="h3-title"><span class="span-number">03</span>Surface Geology</h3>
             </button>
           </div>

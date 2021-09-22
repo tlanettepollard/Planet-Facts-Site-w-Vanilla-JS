@@ -46,35 +46,27 @@ const geologyMobileBtn = document.getElementById('geology-mobile');
 
 // Breakpoints
 const vw = document.documentElement.clientWidth; // For window breakpoints
+
 // Miscellaneous
 //const planetIndex = 0;
 
 let planetsData;
-let currentPlanet
+let currentPlanet = 0;
 let currentState = "overview";
 
 // Get data.json
-function fetchData() {
-    if(typeof data == "undefined"){
-    fetch('/data.json').then(response => response.json())
-        .then(data => {
-            planetsData = data;
-            //console.log(planetsData)
-            displayPlanetInfo();
+fetch('/data.json').then(response => response.json())
+    .then(json => {
+        data = json;
+        planetsData = data;
+        console.log(planetsData);
+        
 
-        }).catch(error => {
-            console.log(error);
-        });
-    }   
-}
-fetchData();
-
-// Get planet information depending on link clicked
-
-function displayPlanetInfo() {
-    
-}
-
-displayPlanetInfo();
+    }).catch(error => {
+        console.log('error: ' + error);
+    });
 
 
+
+
+  

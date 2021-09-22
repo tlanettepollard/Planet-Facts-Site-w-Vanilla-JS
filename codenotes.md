@@ -58,4 +58,8 @@ Resources:
 
 ### 09/19/2021
 
-I'm starting again. I've made this too difficult and I'm becoming frustrated. I added the page links to my index.html. Now I will just use JS to add the information. 
+I'm starting again. I've made this too difficult and I'm becoming frustrated. I added the page links to my index.html. Now I will just use JS to add the information.
+
+### 09/21/2021
+
+Working on adding the data to the html. I'm still following KevinGBojan. I added data to the json file so there were less objects as const. Still having problems updating the information when each page is changed. 
