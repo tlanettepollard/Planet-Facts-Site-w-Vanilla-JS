@@ -46,6 +46,7 @@ const geologyMobileBtn = document.getElementById('geology-mobile');
 
 // Breakpoints
 const vw = document.documentElement.clientWidth; // For window breakpoints
+
 // Miscellaneous
 //const planetIndex = 0;
 
@@ -59,19 +60,13 @@ fetch('/data.json').then(response => response.json())
         data = json;
         planetsData = data;
         console.log(planetsData);
-        //displayPlanetInfo();
+        
 
     }).catch(error => {
         console.log('error: ' + error);
     });
 
-const getPlanetData = function (links) {
-    links.forEach.key(link => {
-        link.addEventListener('click', function (clickedLink) {
-            
-        })
-    }) 
-}
+
 
 
   
