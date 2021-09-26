@@ -47,26 +47,52 @@ const geologyMobileBtn = document.getElementById('geology-mobile');
 // Breakpoints
 const vw = document.documentElement.clientWidth; // For window breakpoints
 
-// Miscellaneous
-//const planetIndex = 0;
 
-let planetsData;
-let currentPlanet = 0;
+let index = 0;
+let currentPlanet = index;
 let currentState = "overview";
 
 // Get data.json
 fetch('/data.json').then(response => response.json())
     .then(json => {
-        data = json;
-        planetsData = data;
-        console.log(planetsData);
-        
+        planetsData = json;
+        //console.log(planetsData);
+        displayPlanetInfo();
 
     }).catch(error => {
         console.log('error: ' + error);
-    });
+    }); 
 
 
+function displayPlanetInfo() {
+    planetName.innerText = planetsData[currentPlanet].name;
+    source.href = planetsData[currentPlanet].overview.source;
+    rotation.innerText = planetsData[currentPlanet].rotation;
+    revolution.innerText = planetsData[currentPlanet].revolution;
+    radius.innerText = planetsData[currentPlanet].radius;
+    temperature.innerText = planetsData[currentPlanet].temperature;
 
+    if (currentState == 'overview') {
+        planetDesc.innerText = planetsData[currentPlanet].overview.content;
+        source.href = planetsData[currentPlanet].overview.source;
+        planetImage.style.background = `url('${planetsData[currentPlanet].images.planet}')`;
+        planetImage.style.backgroundRepeat = 'no-repeat';
+        planetImage.style.backgroundPosition = 'center';
+
+        if (vw > 992) {
+            planetImage.style.backgroundSize = `${planetsData[currentPlanet].size.large}`, `${planetsData[currentPlanet].size.large}`;
+            planetImage.style.height = `${planetsData[currentPlanet].size.large}`;
+            planetImage.style.width = `${planetsData[currentPlanet].size.large}`;
+        } else if (vw <= 992 && vw >= 768) {
+            planetImage.style.backgroundSize = `${planetsData[currentPlanet].size.medium}`, `${planetsData[currentPlanet].size.medium}`;
+            planetImage.style.height = `${planetsData[currentPlanet].size.medium}`;
+            planetImage.style.width = `${planetsData[currentPlanet].size.medium}`;
+        } else {
+            planetImage.style.backgroundSize = `${planetsData[currentPlanet].size.small}`, `${planetsData[currentPlanet].size.small}`;
+            planetImage.style.height = `${planetsData[currentPlanet].size.small}`;
+            planetImage.style.width = `${planetsData[currentPlanet].size.small}`;
+        }
+    }
+}
 
   
