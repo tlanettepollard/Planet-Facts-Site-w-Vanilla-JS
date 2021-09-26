@@ -62,4 +62,8 @@ I'm starting again. I've made this too difficult and I'm becoming frustrated. I 
 
 ### 09/21/2021
 
-Working on adding the data to the html. I'm still following KevinGBojan. I added data to the json file so there were less objects as const. Still having problems updating the information when each page is changed. 
+Working on adding the data to the html. I'm still following KevinGBojan. I added data to the json file so there were less objects as const. Still having problems updating the information when each page is changed.
+
+### 09/26/2021
+
+Back again. Did some more research on using onclick vs addEventListener. The clicking and changing the pages content has held me up.
