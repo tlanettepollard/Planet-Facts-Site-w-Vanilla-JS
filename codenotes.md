@@ -23,15 +23,17 @@ I've decided to use all of the planet index pages instead of importing the json 
 I'm going to try to add the information using the data.json file. Wish me luck. I made the planet icons for the mobile menu using Sketch. I am so proud of myself. My planet icons look awesome! For my responsive navigation, I am referring to:
 
 Resources:
-[Let's Build a Responsive Navbar...](https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci)
+
+- [Let's Build a Responsive Navbar...](https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci)
 
 ### 09/04/2021
 
 Today I am working on the responsive navbar. I used a tutorial on dev.to. Posted link yesterday. I was able to add transition and have the mobileNav as an offcanvas menu. I am referring to a fellow coder for importing data into the website. I also researched DOM style using JS.
 
 Resources:
-[Planets Fact Site](https://github.com/KevinGBojan/planets-fact-site) by Kevin G Bojan
-[W3 Schools DOM Style](https://www.w3schools.com/jsref/prop_style_background.asp)
+
+- [Planets Fact Site](https://github.com/KevinGBojan/planets-fact-site) by Kevin G Bojan
+- [W3 Schools DOM Style](https://www.w3schools.com/jsref/prop_style_background.asp)
 
 ### 09/05/2021
 
@@ -42,8 +44,9 @@ I searched to find an alternative to using `onClick` in my HTML. I was having a 
 Working on my JS and using the data.json to load information into the webpage.
 
 Resources:
-[Fetch API & Rendering Data with Javascript](https://youtu.be/FN_ffvw_ksE) by Hunter Chang
-[JavaScript Template Literals: JSON to HTML](https://youtu.be/DG4obitDvUA) by LearnWebCode
+
+- [Fetch API & Rendering Data with Javascript](https://youtu.be/FN_ffvw_ksE) by Hunter Chang
+- [JavaScript Template Literals: JSON to HTML](https://youtu.be/DG4obitDvUA) by LearnWebCode
 
 ### 09/16/2021
 
@@ -54,7 +57,8 @@ Still having issues about how to organize my code. I get so caught up in how I s
 Still working on my JS. I got the data to appear in my HTML. Now I need to work on my links. Trying to figure out the correct logic.
 
 Resources:
-[Planet Facts Site](https://github.com/nithinmanoj10/Planets-Fact-Site) by Nithinmanoj10
+
+- [Planet Facts Site](https://github.com/nithinmanoj10/Planets-Fact-Site) by Nithinmanoj10
 
 ### 09/19/2021
 
@@ -67,3 +71,13 @@ Working on adding the data to the html. I'm still following KevinGBojan. I added
 ### 09/26/2021
 
 Back again. Did some more research on using onclick vs addEventListener. The clicking and changing the pages content has held me up.
+
+### 09/30/2021
+
+Did some research on using addEventListeners vs using onClick/onclick. I've seen other coders use onclick & onClick in their HTML for the links that change the planet pages. I've read that using onclick isn't best practice. I had to do more research.
+
+Resources:
+
+- [Use addEventListener() Instead of onclick/oninput/onchange... Especially When Working in Teams](https://medium.com/@ysmiracle/use-addeventlistener-instead-of-onclick-oninput-onchange-especially-when-working-in-teams-50ad40badb8d) by Shun Yao
+
+* [addEventListener vs onclick: Which one should draft into your fantasy football tema?](https://medium.com/@annapeterson89/addeventlistener-vs-onclick-which-one-should-you-draft-into-your-fantasy-football-team-16ea9ae71ee0) by Anna Peterson
