@@ -170,6 +170,8 @@ function displayPlanetInfo() {
         planetLink.href = planet.geology.source;
         planetImage.src = `url('${planet.images.geology}'), url('${planet.images.planet}')`;
         geologyImage.style.display = 'block';
+        geologyImage.style.position = 'absolute';
+        geologyImage.style.bottom = '3rem';
         geologyBtn.style.borderBottom = `4px solid ${planet.color}`;
         overviewBtn.style.borderBottom = null;
         structureBtn.style.borderBottom = null;
