@@ -143,7 +143,43 @@ h4 {
   justify-content: space-between;
   align-items: center;
 }
-.description-mobile {
+.description .desc-buttons {
+  order: 1;
+}
+@media screen and (min-width: 992px) {
+  .description .desc-buttons {
+    order: unset;
+  }
+}
+.description .desc-buttons .btn {
+  cursor: pointer;
+}
+.description #top-section-left {
+  order: 2;
+}
+@media screen and (min-width: 992px) {
+  .description #top-section-left {
+    order: unset;
+  }
+}
+.description #top-section-right--desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  order: 3;
+}
+@media screen and (min-width: 992px) {
+  .description #top-section-right--desc {
+    order: unset;
+  }
+}
+.description #top-section-right--desc .description-text,
+.description #top-section-right--desc .source-link {
+  text-align: center;
+}
+
+.desc-buttons--mobile {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -151,51 +187,11 @@ h4 {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .description-mobile {
+  .desc-buttons--mobile {
     display: none;
   }
 }
-.description-tablet {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .description-tablet {
-    display: block;
-  }
-}
-.description .img__container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.description .img__container > img {
-  width: 11.1rem;
-  height: 11.1rem;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.description .planet {
-  width: 11.1rem;
-}
-.description .geology {
-  width: 5rem;
-}
-.description #top-section-right-top {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.description #top-section-right-top .description-planet-text,
-.description #top-section-right-top .source {
-  text-align: center;
-}
-.description-tablet .btn {
-  cursor: pointer;
-}
-.description-mobile .btn-mobile {
+.desc-buttons--mobile .btn-mobile {
   background-color: transparent;
   cursor: pointer;
   border-bottom: 5px solid transparent;

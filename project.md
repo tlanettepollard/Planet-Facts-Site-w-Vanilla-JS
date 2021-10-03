@@ -286,7 +286,7 @@ temperature.innerText = data[currentPlanet].temperature;
     if (currentState == "planetOverview") {
         planetDesc.innerText = data[currentPlanet].overview.content;
         source.href = data[currentPlanet].overview.source;
-        planetImage.stylev.background = `url('/assets/planet-${planets[currentPlanet]}.svg')`;
+        planetImage.style.background = `url('/assets/planet-${planets[currentPlanet]}.svg')`;
         planetImage.style.backgroundRepeat = 'no-repeat';
         planetImage.style.backgroundPosition = 'center';
 

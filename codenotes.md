@@ -80,4 +80,12 @@ Resources:
 
 - [Use addEventListener() Instead of onclick/oninput/onchange... Especially When Working in Teams](https://medium.com/@ysmiracle/use-addeventlistener-instead-of-onclick-oninput-onchange-especially-when-working-in-teams-50ad40badb8d) by Shun Yao
 
-* [addEventListener vs onclick: Which one should draft into your fantasy football tema?](https://medium.com/@annapeterson89/addeventlistener-vs-onclick-which-one-should-you-draft-into-your-fantasy-football-team-16ea9ae71ee0) by Anna Peterson
+- [addEventListener vs onclick: Which one should draft into your fantasy football tema?](https://medium.com/@annapeterson89/addeventlistener-vs-onclick-which-one-should-you-draft-into-your-fantasy-football-team-16ea9ae71ee0) by Anna Peterson
+
+### 10/02/2021
+
+Trying to do the JS on my own. Starting again for the fifth time. I finally figured out how to use addEventListener instead of onclick. I was able to put the events for the description buttons in the displayPlanetInfo function.
+
+Resources:
+
+- [Planet Fact Site](https://github.com/aborron/planets-fact-site) by Aborron
