@@ -25,7 +25,7 @@
           <li class="navbar__menu-item  nav__item--mercury">
             <div>
               <img src="assets/mercury-circle.png" class="planet-icon" alt="planet icon">
-              <a class="nav__link nav__link--mercury" href="/index.html">Mercury</a>
+              <a class="nav__link nav__link--mercury active" href="/index.html">Mercury</a>
             </div>
             <img src="assets/icon-chevron.svg" class="menu-chevron" alt="menu arrow">
           </li>
@@ -83,51 +83,36 @@
     </header>
 
     <main class="main">
-      <section id="top-section" class="description">
-        <div id="top-section--mobile" class="description-mobile">
-          <button id="overview-mobile" class="btn-overview-mobile btn-mobile btn-selected">
-            <h3 class="h3-title">Overview</h3>
-          </button>
-          <button id="structure-mobile" class="btn-structure-mobile btn-mobile btn-selected">
-            <h3 class="h3-title">Structure</h3>
-          </button>
-          <button id="geology-mobile" class="btn-geology-mobile btn-mobile btn-selected">
-            <h3 class="h3-title">Surface Geology</h3>
-          </button>
-        </div>
+      <section  class="description">
+        <div id="top-section-left" class="planet-image__container">
+          <div id="top-image--one" class="planet-image planet-image--mercury"></div>
+          <div id="top-image--two" class="geology-image"></div> 
+        </div><!-- .planet-image__container -->
 
-        <div id="top-section-left">
-          <div id="top-image--one" class="planet-image">
-            
-          </div>
-         <!-- <div id="top-image--two" class="description-img-two geology"></div> -->
-        </div><!-- .top-section__left-image-->
-
-        <div id="top-section-right">
+        <div id="top-section-right--desc">
           <div class="description-planet">
             <h1 id="main-title" class="description-title planet-title h1-title"></h1>
               <p id="main-text" class="description-text planet-text body-text"></p>
               <p class="body-text">Source: 
                 <a class="source-link" href="" target="_blank">Wikipedia</a>
               </p>
-          </div>
-        
-          <div class="top-section-right--bottom  description-tablet planet">
-            <button id="overview" class="btn btn-overview" role="tab" aria-selected="true">
+          </div> 
+        </div><!-- #top-section__right -->
+        <div class="desc-buttons">
+            <button class="btn btn-overview" role="tab" aria-selected="true">
               <h3 class="h3-title"><span class="span-number">01</span>Overview</h3>
             </button>
-            <button id="structure" class="btn btn-structure" role="tab" aria-selected="false">
+            <button class="btn btn-structure" role="tab" aria-selected="false">
               <h3 class="h3-title"><span class="span-number">02</span>Structure</h3>
             </button>
-            <button id="geology" class="btn btn-geology" role="tab" aria-selected="false">
+            <button class="btn btn-geology" role="tab" aria-selected="false">
               <h3 class="h3-title"><span class="span-number">03</span>Surface Geology</h3>
             </button>
           </div>
-        </div><!-- .top-section__right -->
-      </section>
+      </section><!-- .description -->
 
       <footer id="bottom-section">
-        <div id="bottom-section__container">
+        <div class="bottom-section__container">
           <div id="bottom-section__first-fact" class="rotation facts">
             <h4 class="facts-title h4-title">Rotation Time</h4>
             <h2 class="rotation-time facts-info"></h2>
