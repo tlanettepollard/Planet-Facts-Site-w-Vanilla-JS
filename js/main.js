@@ -40,10 +40,7 @@ const overviewBtn = document.querySelector('.btn-overview');
 const structureBtn = document.querySelector('.btn-structure');
 const geologyBtn = document.querySelector('.btn-geology');
 
-
 let id = 0;
-let currentState = "overview";
-
 
 // Get data.json
 fetch('/data.json').then(response => response.json())
@@ -59,7 +56,7 @@ fetch('/data.json').then(response => response.json())
 
 function displayPlanetInfo() {
     const planet = planetsData[id];
-
+    let currentState = 'overview';
     planetName.innerText = planet.name;
     planetDesc.innerText = planet.overview.content;
     planetLink.href = planet.overview.source;
@@ -67,86 +64,78 @@ function displayPlanetInfo() {
     revolution.innerText = planet.revolution;
     radius.innerText = planet.radius;
     temperature.innerText = planet.temperature;
-
-    //Image
-    planetImage.style.background = `url('${planet.images.planet}')`;
-    planetImage.style.backgroundRepeat = 'no-repeat';
-    planetImage.style.backgroundPosition = 'center';
-
-    if (window.innerWidth < 768){
-        planetImage.style.backgroundSize = `${planet.size.small}`, `${planet.size.small}`;
-        planetImage.style.width = `${planet.size.small}`;
-        planetImage.style.height = `${planet.size.small}`;
-    } else if (window.innerWidth <= 992 && window.innerWidth >= 768) {
-        planetImage.style.backgroundSize = `${planet.size.medium}`, `${planet.size.medium}`;
-        planetImage.style.width = `${planet.size.medium}`;
-        planetImage.style.height = `${planet.size.medium}`; 
+    planetImage.src = planet.images.planet;
+    geologyImage.style.display = 'none';
+    
+    if (window.innerWidth < 768) {
+        planetImage.style.height = planet.size.small;
+        planetImage.style.width = planet.size.small;
+    } else if (window.innerWidth >= 768 && window.innerWidth <= 992) {
+        planetImage.style.height = planet.size.medium;
+        planetImage.style.width = planet.size.medium;
     } else {
-        planetImage.style.backgroundSize = `${planet.size.large}`, `${planet.size.large}`;
-        planetImage.style.width = `${planet.size.large}`;
-        planetImage.style.height = `${ planet.size.large }`;
+        planetImage.style.height = planet.size.large;
+        planetImage.style.width = planet.size.large;
     }
 
-    // Overview Button
     overviewBtn.addEventListener('click', () => {
+        currentState = 'overview';
         planetDesc.innerText = planet.overview.content;
         planetLink.href = planet.overview.source;
-        planetImage.background = `url('${planet.images.planet}')`;
+        planetImage.src = planet.images.planet;
         geologyImage.style.display = 'none';
         overviewBtn.style.backgroundColor = `#${planet.color}`;
-        structureBtn.style.backgroundColor = 'transparent';
+        structureBtn.style.backgroundColor ='transparent';
         geologyBtn.style.backgroundColor = 'transparent';
 
-        //Buttons: Mobile
         if (window.innerWidth < 768) {
             overviewBtn.style.borderBottom = `4px solid #${planet.color}`;
             overviewBtn.style.background = 'transparent';
             geologyBtn.style.borderBottom = 'transparent';
             structureBtn.style.borderBottom = 'transparent';
         }
-    });
+    })
 
-    //Structure Button
+    // Structure Button 
     structureBtn.addEventListener('click', () => {
         planetDesc.innerText = planet.structure.content;
         planetLink.href = planet.structure.source;
-        planetImage.style.background = `url('${planet.images.internal}')`;
-        planetImage.style.backgroundRepeat = 'no-repeat';
-        planetImage.style.backgroundPosition = 'center';
-
-        if (window.innerWidth < 768){
-        planetImage.style.backgroundSize = `${planet.size.small}`, `${planet.size.small}`;
-        planetImage.style.width = `${planet.size.small}`;
-        planetImage.style.height = `${planet.size.small}`;
-    } else if (window.innerWidth <= 992 && window.innerWidth >= 768) {
-        planetImage.style.backgroundSize = `${planet.size.medium}`, `${planet.size.medium}`;
-        planetImage.style.width = `${planet.size.medium}`;
-        planetImage.style.height = `${planet.size.medium}`; 
-    } else {
-        planetImage.style.backgroundSize = `${planet.size.large}`, `${planet.size.large}`;
-        planetImage.style.width = `${planet.size.large}`;
-        planetImage.style.height = `${ planet.size.large }`;
-    }
-         
-        //Buttons
-        structureBtn.style.backgroundColor = `#${planet.color}`;
+        planetImage.src = planet.images.internal;
         geologyImage.style.display = 'none';
         overviewBtn.style.backgroundColor = 'transparent';
+        structureBtn.style.backgroundColor = `#${planet.color}`;
         geologyBtn.style.backgroundColor = 'transparent';
-
-        //Buttons: Mobile
+        
         if (window.innerWidth < 768) {
             structureBtn.style.borderBottom = `4px solid #${planet.color}`;
             structureBtn.style.background = 'transparent';
-            overviewBtn.style.borderBottom = 'transparent';
             geologyBtn.style.borderBottom = 'transparent';
+            overviewBtn.style.borderBottom = 'transparent';
         }
     });
 
     // Geology Button
+    geologyBtn.addEventListener('click', () => {
+        planetDesc.innerText = planet.structure.content;
+        planetLink.href = planet.structure.source;
+        geologyImage.src = planet.images.geology;
+        geologyImage.style.display = 'block';
+        geologyImage.style.position = 'absolute';
+        overviewBtn.style.backgroundColor = 'transparent';
+        structureBtn.style.backgroundColor = 'transparent';
+        geologyBtn.style.backgroundColor = `#${planet.color}`;
 
-
-    
+        if (window.innerWidth < 768) {
+            geologyImage.style.height = planet.geosize.small;
+            geologyImage.style.width = planet.geosize.small;
+        } else if (window.innerWidth >= 768 && window.innerWidth <= 992) {
+            planetImage.style.height = planet.geosize.medium;
+            planetImage.style.width = planet.geosize.medium;   
+        } else {
+            planetImage.style.height = planet.geosize.large;
+            planetImage.style.width = planet.geosize.large;
+        }
+    });
     
 }
 
