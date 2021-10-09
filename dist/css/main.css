@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  outline: 1px solid white;
 }
 
 *,
@@ -146,7 +145,7 @@ h4 {
 .description .desc-buttons {
   order: 1;
 }
-@media screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   .description .desc-buttons {
     order: unset;
   }
@@ -157,10 +156,14 @@ h4 {
 .description #top-section-left {
   order: 2;
 }
-@media screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   .description #top-section-left {
     order: unset;
   }
+}
+.description #top-section-left .planet-image__container {
+  width: 100%;
+  height: 100%;
 }
 .description #top-section-right--desc {
   display: flex;
