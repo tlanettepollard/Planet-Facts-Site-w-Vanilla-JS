@@ -89,3 +89,9 @@ Trying to do the JS on my own. Starting again for the fifth time. I finally figu
 Resources:
 
 - [Planet Fact Site](https://github.com/aborron/planets-fact-site) by Aborron
+
+### 10092021
+
+I started this project two months ago. it shouldn't have taken me this long to complete this website. My indecision has gotten in the way. I've tried to be efficient. I've researched ways to set up the project. I really wanted to use HTML/CSS/JS. I wanted to import the data into each the page. I've managed to do that. However, I opted to handle the sizing of the images in JS as well. Not sure that was the best thing to do. So, I've decided to go back to the basic information in the JSON file and adjust the image sizes and colors in CSS.
+
+I've also had a battle with onclick, onClick, and addEventListener. I keep reading it's not best practice to use onclick in HTML. Yet, I keep seeing people use this practice. (See 09/30/2021 Notes) 

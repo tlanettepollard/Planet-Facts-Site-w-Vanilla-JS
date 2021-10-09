@@ -608,54 +608,165 @@ Radius
 Average Temp.
 -201°c
 
-******
+---
+
 Saturn
 
   <!-- Overview Content Start -->
 
-  Saturn is the sixth planet from the Sun and the second-largest in the Solar 
-  System, after Jupiter. It is a gas giant with an average radius of about 
-  nine and a half times that of Earth. It only has one-eighth the average 
-  density of Earth.
+Saturn is the sixth planet from the Sun and the second-largest in the Solar
+System, after Jupiter. It is a gas giant with an average radius of about
+nine and a half times that of Earth. It only has one-eighth the average
+density of Earth.
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn -->
+Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn -->
 
   <!-- Overview Content End -->
 
   <!-- Internal Structure Content Start -->
 
-  Despite consisting mostly of hydrogen and helium, most of Saturn's mass 
-  is not in the gas phase, because hydrogen becomes a non-ideal liquid 
-  when the density is above 0.01 g/cm3, which is reached at a radius 
-  containing 99.9% of Saturn's mass.
+Despite consisting mostly of hydrogen and helium, most of Saturn's mass
+is not in the gas phase, because hydrogen becomes a non-ideal liquid
+when the density is above 0.01 g/cm3, which is reached at a radius
+containing 99.9% of Saturn's mass.
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn#Internal_structure -->
+Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn#Internal_structure -->
 
   <!-- Internal Structure Content End -->
 
   <!-- Surface Geology Content Start -->
 
-  The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% 
-  helium by volume. The planet's most famous feature is its prominent ring 
-  system, which is composed mostly of ice particles with a smaller amount 
-  of rocky debris and dust. 
+The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25%
+helium by volume. The planet's most famous feature is its prominent ring
+system, which is composed mostly of ice particles with a smaller amount
+of rocky debris and dust.
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn#Atmosphere -->
+Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn#Atmosphere -->
 
   <!-- Surface Geology Content End -->
 
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
+01 Overview
+02 Internal Structure
+03 Surface Geology
 
-  Rotation Time
-  10.8 Hours
+Rotation Time
+10.8 Hours
 
-  Revolution Time
-  29.46 Years
+Revolution Time
+29.46 Years
 
-  Radius
-  58,232 KM
+Radius
+58,232 KM
 
-  Average Temp.
-  -138°c
+Average Temp.
+-138°c
+
+---
+
+Mercury
+"color": "419EBB",
+"size": {
+"large": "290px",
+"medium": "184px",
+"small": "111px"
+},
+"geologySize": {
+"large": "163px 199px",
+"medium": "80px 93.25px",
+"small": "50px 58.28px"
+}
+
+Venus
+,
+"color": "EDA249",
+"size": {
+"large": "400px",
+"medium": "253px",
+"small": "154px"
+},
+"geologySize": {
+"large": "163px 199px",
+"medium": "80px 93.25px",
+"small": "50px 58.28px"
+}
+
+Earth
+,
+"color": "6D2ED5",
+"size": {
+"large": "450px",
+"medium": "285px",
+"small": "173px"
+},
+"geologySize": {
+"large": "163px 199px",
+"medium": "80px 93.25px",
+"small": "50px 58.28px"
+}
+
+Mars
+,
+"color": "D14C32",
+"size": {
+"large": "336px",
+"medium": "213px",
+"small": "129px"
+},
+"geologySize": {
+"large": "163px 199px",
+"medium": "80px 93.25px",
+"small": "50px 58.28px"
+}
+
+Jupiter
+,
+"color": "D83A34",
+"size": {
+"large": "582px",
+"medium": "369px",
+"small": "224px"
+},
+"geologySize": {
+"large": "163px 199px",
+"medium": "80px 93.25px",
+"small": "50px 58.28px"
+}
+Saturn
+,
+"color": "CD5120",
+"size": {
+"large": "668px",
+"medium": "422px",
+"small": "256px"
+},
+"geologySize": {
+"large": "163px 199px",
+"medium": "80px 93.25px",
+"small": "50px 58.28px"
+}
+Uranus
+,
+"color": "1EC1A2",
+"size": {
+"large": "458px",
+"medium": "290px",
+"small": "176px"
+},
+"geologySize": {
+"large": "163px 199px",
+"medium": "80px 93.25px",
+"small": "50px 58.28px"
+}
+Neptune
+,
+"color": "2D68F0",
+"size": {
+"large": "450px",
+"medium": "285px",
+"small": "173px"
+},
+"geologySize": {
+"large": "163px 199px",
+"medium": "80px 93.25px",
+"small": "50px 58.28px"
+}

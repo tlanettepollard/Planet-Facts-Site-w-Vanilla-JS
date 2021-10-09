@@ -25,56 +25,56 @@
           <li class="navbar__menu-item  nav__item--mercury">
             <div>
               <img src="assets/mercury-circle.png" class="planet-icon" alt="planet icon">
-              <a class="nav__link nav__link--mercury active" href="/index.html">Mercury</a>
+              <a class="nav__link nav__link--mercury active" value="0" href="/index.html">Mercury</a>
             </div>
             <img src="assets/icon-chevron.svg" class="menu-chevron" alt="menu arrow">
           </li>
           <li class="navbar__menu-item nav__item--venus">
             <div>
               <img src="assets/venus-circle.png" class="planet-icon" alt="planet icon">
-              <a class="nav__link nav__link--venus" href="/venus.html">Venus</a>
+              <a class="nav__link nav__link--venus" value="1" href="/venus.html">Venus</a>
             </div>
             <img src="assets/icon-chevron.svg" class="menu-chevron" alt="menu arrow">
           </li>
           <li class="navbar__menu-item nav__item--earth">
             <div>
               <img src="assets/earth-circle.png" class="planet-icon" alt="planet icon">
-              <a class="nav__link nav__link--earth" href="/earth.html">Earth</a>
+              <a class="nav__link nav__link--earth" value="2" href="/earth.html">Earth</a>
             </div>
             <img src="assets/icon-chevron.svg" class="menu-chevron" alt="menu arrow">
           </li>
           <li class="navbar__menu-item nav__item--mars">
             <div>
               <img src="assets/mars-circle.png" class="planet-icon" alt="planet icon">
-              <a class="nav__link nav__link--mars" href="/mars.html">Mars</a>
+              <a class="nav__link nav__link--mars" value="3" href="/mars.html">Mars</a>
             </div>
             <img src="assets/icon-chevron.svg" class="menu-chevron" alt="menu arrow">
           </li>
           <li class="navbar__menu-item nav__item--jupiter">
             <div>
               <img src="assets/jupiter-circle.png" class="planet-icon" alt="planet icon">
-              <a class="nav__link nav__link--jupiter" href="/jupiter.html">Jupiter</a>
+              <a class="nav__link nav__link--jupiter" value="4" href="/jupiter.html">Jupiter</a>
             </div>
             <img src="assets/icon-chevron.svg" class="menu-chevron" alt="menu arrow">  
           </li>
           <li class="navbar__menu-item nav__item--saturn">
             <div>
               <img src="assets/saturn-circle.png" class="planet-icon" alt="planet icon">
-              <a class="nav__link nav__link--saturn" href="/saturn.html">Saturn</a>
+              <a class="nav__link nav__link--saturn" value="5" href="/saturn.html">Saturn</a>
             </div>
             <img src="assets/icon-chevron.svg" class="menu-chevron" alt="menu arrow">
           </li>
           <li class="navbar__menu-item nav__item--uranus">
             <div>
               <img src="assets/uranus-circle.png" class="planet-icon" alt="planet icon">
-              <a class="nav__link nav__link--uranus" href="/uranus.html">Uranus</a>
+              <a class="nav__link nav__link--uranus" value="6" href="/uranus.html">Uranus</a>
             </div>
             <img src="assets/icon-chevron.svg" class="menu-chevron" alt="menu arrow">
           </li>
           <li class="navbar__menu-item nav__item--neptune">
             <div>
               <img src="assets/neptune-circle.png" class="planet-icon" alt="planet icon">
-              <a class="nav__link nav__link--neptune" href="/neptune.html">Neptune</a>
+              <a class="nav__link nav__link--neptune" value="7" href="/neptune.html">Neptune</a>
             </div>
             <img src="assets/icon-chevron.svg" class="menu-chevron" alt="menu arrow">
           </li>
@@ -85,8 +85,8 @@
     <main class="main">
       <section  class="description">
         <div id="top-section-left" class="planet-image__container">
-          <div id="top-image--one" class="planet-image planet-image--mercury"></div>
-          <div id="top-image--two" class="geology-image"></div> 
+          <div id="planet__image" class="planet-image planet-image--mercury"></div>
+          <div id="geology__image" class="geology-image"></div> 
         </div><!-- .planet-image__container -->
 
         <div id="top-section-right--desc">
@@ -99,13 +99,13 @@
           </div> 
         </div><!-- #top-section__right -->
         <div class="desc-buttons">
-            <button class="btn btn-overview" role="tab" aria-selected="true">
+            <button class="btn btn-overview" aria-selected="true">
               <h3 class="h3-title"><span class="span-number">01</span>Overview</h3>
             </button>
-            <button class="btn btn-structure" role="tab" aria-selected="false">
+            <button class="btn btn-structure" aria-selected="false">
               <h3 class="h3-title"><span class="span-number">02</span>Structure</h3>
             </button>
-            <button class="btn btn-geology" role="tab" aria-selected="false">
+            <button class="btn btn-geology" aria-selected="false">
               <h3 class="h3-title"><span class="span-number">03</span>Surface Geology</h3>
             </button>
           </div>
