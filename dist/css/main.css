@@ -162,6 +162,14 @@ h4 {
     order: unset;
   }
 }
+.description #top-section-left .planet-image__container {
+  /* .geology-image {
+       @media only screen and (max-with: 767px){
+           width: 5rem;
+           height: 5.828rem;
+       }
+   }*/
+}
 .description #top-section-right--desc {
   display: flex;
   flex-direction: column;

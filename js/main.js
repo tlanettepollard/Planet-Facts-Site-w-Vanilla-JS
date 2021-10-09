@@ -118,6 +118,7 @@ function displayPlanetInfo() {
     geologyBtn.addEventListener('click', () => {
         planetDesc.innerText = planet.structure.content;
         planetLink.href = planet.structure.source;
+        planetImage.src = planet.images.planet;
         geologyImage.src = planet.images.geology;
         geologyImage.style.display = 'block';
         geologyImage.style.position = 'absolute';
@@ -126,14 +127,14 @@ function displayPlanetInfo() {
         geologyBtn.style.backgroundColor = `#${planet.color}`;
 
         if (window.innerWidth < 768) {
-            geologyImage.style.height = planet.geosize.small;
-            geologyImage.style.width = planet.geosize.small;
+            geologyImage.style.height = planet.geologysize.small;
+            geologyImage.style.width = planet.geologysize.small;
         } else if (window.innerWidth >= 768 && window.innerWidth <= 992) {
-            planetImage.style.height = planet.geosize.medium;
-            planetImage.style.width = planet.geosize.medium;   
+            geologyImage.style.height = planet.geologysize.medium;
+            geologyImage.style.width = planet.geologysize.medium;   
         } else {
-            planetImage.style.height = planet.geosize.large;
-            planetImage.style.width = planet.geosize.large;
+            geologyImage.style.height = planet.geologysize.large;
+            geologyImage.style.width = planet.geologysize.large;
         }
     });
     
