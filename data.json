@@ -63,7 +63,7 @@
       "medium": "253px",
       "small": "154px"
     },
-    "geologySize": {
+    "geologysize": {
       "large": "163px 199px",
       "medium": "80px 93.25px",
       "small": "50px 58.28px"
@@ -98,7 +98,7 @@
       "medium": "285px",
       "small": "173px"
     },
-    "geologySize": {
+    "geologysize": {
       "large": "163px 199px",
       "medium": "80px 93.25px",
       "small": "50px 58.28px"
@@ -133,7 +133,7 @@
       "medium": "213px",
       "small": "129px"
     },
-    "geologySize": {
+    "geologysize": {
       "large": "163px 199px",
       "medium": "80px 93.25px",
       "small": "50px 58.28px"
@@ -168,7 +168,7 @@
       "medium": "369px",
       "small": "224px"
     },
-    "geologySize": {
+    "geologysize": {
       "large": "163px 199px",
       "medium": "80px 93.25px",
       "small": "50px 58.28px"
@@ -203,7 +203,7 @@
       "medium": "422px",
       "small": "256px"
     },
-    "geologySize": {
+    "geologysize": {
       "large": "163px 199px",
       "medium": "80px 93.25px",
       "small": "50px 58.28px"
@@ -238,7 +238,7 @@
       "medium": "290px",
       "small": "176px"
     },
-    "geologySize": {
+    "geologysize": {
       "large": "163px 199px",
       "medium": "80px 93.25px",
       "small": "50px 58.28px"
@@ -273,7 +273,7 @@
       "medium": "285px",
       "small": "173px"
     },
-    "geologySize": {
+    "geologysize": {
       "large": "163px 199px",
       "medium": "80px 93.25px",
       "small": "50px 58.28px"

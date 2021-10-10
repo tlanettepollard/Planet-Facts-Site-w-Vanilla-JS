@@ -2,8 +2,7 @@
     grid-area: description;
     height: 100%;
     @include flex (column, space-between, center);
-    
-    
+     
     .desc-buttons{
         order: 1;
         @media only screen and (min-width: $bp-lg) {

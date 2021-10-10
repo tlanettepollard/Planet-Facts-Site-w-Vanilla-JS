@@ -82,23 +82,11 @@
     </header>
 
     <main class="main">
-      <section id="top-section" class="description">
-        <div id="top-section--mobile" class="description-mobile">
-          <button id="overview-mobile" class="btn-overview-mobile btn-mobile btn-selected">
-            <h3 class="h3-title">Overview</h3>
-          </button>
-          <button id="structure-mobile" class="btn-structure-mobile btn-mobile btn-selected">
-            <h3 class="h3-title">Structure</h3>
-          </button>
-          <button id="geology-mobile" class="btn-geology-mobile btn-mobile btn-selected">
-            <h3 class="h3-title">Surface Geology</h3>
-          </button>
-        </div>
-
-        <div id="top-section-left">
-          <div id="top-image--one" class="description-img planet-image"></div>
-         <!-- <div id="top-image--two" class="description-img-two geology"></div> -->
-        </div><!-- .top-section__left-image-->
+      <section class="description">
+        <div id="top-section-left" class="planet-image__container">
+          <img id="planet__image" class="planet-image planet-image--mercury" src="" alt="Planet image">
+          <img id="geology__image" class="geology-image" src="" alt="Geolgogy image">
+        </div><!-- .planet-image__container -->
 
         <div id="top-section-right">
           <div class="description-planet">
@@ -150,6 +138,15 @@
     </main>  
   </div><!-- .wrapper -->
   
+  <script src="data.json"></script>
   <script src="js/main.js"></script>
+  <script>
+    fetch('/data.json').then(response => response.json()).then(json => {
+      planetsData = json;
+      console.log(planetsData);
+      const planet = planetsData[2];
+      displayPlanetInfo(planet);
+    });
+  </script>
 </body>
 </html>
