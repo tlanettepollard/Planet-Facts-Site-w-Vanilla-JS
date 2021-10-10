@@ -24,7 +24,7 @@ function closeMenu() {
 
 // Facts
 const main = document.querySelector('.main');
-const planetLink = document.querySelector('.nav__link');
+//const planetLink = document.querySelector('.nav__link');
 const planetName = document.querySelector('.planet-title');
 const planetImage = document.querySelector('.planet-image');
 const geologyImage = document.querySelector('.geology-image');
@@ -40,10 +40,9 @@ const overviewBtn = document.querySelector('.btn-overview');
 const structureBtn = document.querySelector('.btn-structure');
 const geologyBtn = document.querySelector('.btn-geology');
 
-let id = 0;
 
 // Get data.json
-fetch('/data.json').then(response => response.json())
+/*fetch('/data.json').then(response => response.json())
     .then(json => {
         planetsData = json;
         //console.log(planetsData);
@@ -51,15 +50,16 @@ fetch('/data.json').then(response => response.json())
 
     }).catch(error => {
         console.log('error: ' + error);
-    }); 
+    }); */
 
 
-function displayPlanetInfo() {
-    const planet = planetsData[id];
-    let currentState = 'overview';
+function displayPlanetInfo(planet) {
+    //let id = 0;
+    //const planet = planetsData[];
+    //let currentState = 'overview';
     planetName.innerText = planet.name;
     planetDesc.innerText = planet.overview.content;
-    planetLink.href = planet.overview.source;
+    source.href = planet.overview.source;
     rotation.innerText = planet.rotation;
     revolution.innerText = planet.revolution;
     radius.innerText = planet.radius;
@@ -81,7 +81,7 @@ function displayPlanetInfo() {
     overviewBtn.addEventListener('click', () => {
         currentState = 'overview';
         planetDesc.innerText = planet.overview.content;
-        planetLink.href = planet.overview.source;
+        source.href = planet.overview.source;
         planetImage.src = planet.images.planet;
         geologyImage.style.display = 'none';
         overviewBtn.style.backgroundColor = `#${planet.color}`;
@@ -99,7 +99,7 @@ function displayPlanetInfo() {
     // Structure Button 
     structureBtn.addEventListener('click', () => {
         planetDesc.innerText = planet.structure.content;
-        planetLink.href = planet.structure.source;
+        source.href = planet.structure.source;
         planetImage.src = planet.images.internal;
         geologyImage.style.display = 'none';
         overviewBtn.style.backgroundColor = 'transparent';
@@ -117,7 +117,7 @@ function displayPlanetInfo() {
     // Geology Button
     geologyBtn.addEventListener('click', () => {
         planetDesc.innerText = planet.structure.content;
-        planetLink.href = planet.structure.source;
+        source.href = planet.structure.source;
         planetImage.src = planet.images.planet;
         geologyImage.src = planet.images.geology;
         geologyImage.style.display = 'block';
@@ -138,5 +138,5 @@ function displayPlanetInfo() {
         }
     });
     
-}
+} 
 

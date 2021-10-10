@@ -94,4 +94,16 @@ Resources:
 
 I started this project two months ago. it shouldn't have taken me this long to complete this website. My indecision has gotten in the way. I've tried to be efficient. I've researched ways to set up the project. I really wanted to use HTML/CSS/JS. I wanted to import the data into each the page. I've managed to do that. However, I opted to handle the sizing of the images in JS as well. Not sure that was the best thing to do. So, I've decided to go back to the basic information in the JSON file and adjust the image sizes and colors in CSS.
 
-I've also had a battle with onclick, onClick, and addEventListener. I keep reading it's not best practice to use onclick in HTML. Yet, I keep seeing people use this practice. (See 09/30/2021 Notes) 
+I've also had a battle with onclick, onClick, and addEventListener. I keep reading it's not best practice to use onclick in HTML. Yet, I keep seeing people use this practice. (See 09/30/2021 Notes)
+
+### 10/10/2021
+
+I just saw a Medium article today that I wished I saw when I began this project. It gave 10 signs that you can use to determine if your website needs JavaScript. It was eye-opening and mindblowing! (Well for me it was.) That article points out that many websites are just fine with just CSS and HTML. It doesn't say don't use JS, just use it wisely and sparingly for certain projects. It's also talking about the client-side experience not the server side. It made me realize that I need to determine the amount of JS I use depending on the goal of the site. In this case, since I'm only serving static content and there will be a simple toggle to show information, I don't need to use as much JS to accomplish that task.
+
+I followed aborron as a guide. I added the fetch script to each HTML page.
+
+Resources:
+
+- [10 Signs Your Website Does Not Need JavaScript](https://betterprogramming.pub/10-signs-your-website-does-not-need-javascript-c1a416cdeee8) by E. Correia
+
+- [Planet Fact Site](https://github.com/aborron/planets-fact-site) by Aborron
