@@ -46,16 +46,17 @@ li {
 }
 
 .main {
-    height: 100%;
     width: 100%;
-    display: grid;
+    height: 100%;
+    
+    /*display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 2rem;
     grid-template-areas: 
     "header"
     "description"
-    "facts";
+    "facts";*/
 }
 
 .btn {

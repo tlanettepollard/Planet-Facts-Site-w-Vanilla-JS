@@ -1,33 +1,33 @@
 .description {
-    grid-area: description;
-    height: 100%;
-    @include flex (column, space-between, center);
+    @include flex (column, center, center);
+    height: 56rem;
 
-   .planet-image__container {
-       position: relative;
+    @media only screen and (min-width: $bp-lg) and(max-width: $bp-xl){
+        @include flex (row, center, center);
+        height: 80rem;
+    }
 
-       .geology-image {
-           //display: none;
-           position: absolute;
-           transform: translateX(5.5rem) translateY(-3rem);
-       }
-   } 
+    .top-right__container {
+        @media only screen and (min-width: $bp-md) {
+            @include flex (row, space-between, center);
+        }
+
+        @media only screen and (min-width: $bp-xl) {
+            @include flex (column, space-between, center);
+        }
+    }
+
 
     
 }
 
 .desc-buttons--mobile {
+    height: 5rem;
     @include flex (row, space-between, center);
-    width: 100%;
 
-    @media screen and (min-width: $bp-md) {
+    @media only screen and (min-width: $bp-md){
         display: none;
     }
-
-    .btn-mobile {
-        background-color: transparent;
-        cursor: pointer;
-        border-bottom: 5px solid transparent;
-
-    }
 }
+
+

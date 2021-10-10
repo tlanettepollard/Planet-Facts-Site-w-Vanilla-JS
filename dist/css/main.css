@@ -47,13 +47,16 @@ li {
 }
 
 .main {
-  height: 100%;
   width: 100%;
-  display: grid;
+  height: 100%;
+  /*display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 2rem;
-  grid-template-areas: "header" "description" "facts";
+  grid-template-areas: 
+  "header"
+  "description"
+  "facts";*/
 }
 
 .btn {
@@ -136,47 +139,63 @@ h4 {
 }
 
 .description {
-  grid-area: description;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  height: 56rem;
 }
-.description .planet-image__container {
-  position: relative;
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80rem;
+  }
 }
-.description .planet-image__container .geology-image {
-  position: absolute;
-  transform: translateX(5.5rem) translateY(-3rem);
+@media only screen and (min-width: 768px) {
+  .description .top-right__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .description .top-right__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .desc-buttons--mobile {
+  height: 5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .desc-buttons--mobile {
     display: none;
   }
 }
-.desc-buttons--mobile .btn-mobile {
-  background-color: transparent;
-  cursor: pointer;
-  border-bottom: 5px solid transparent;
-}
 
-#bottom-section {
-  grid-area: facts;
+#bottom-section .attribution {
+  margin-bottom: 0px;
 }
 
 .header {
-  grid-area: header;
   width: 100%;
   border-bottom: 1px solid #838391;
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .header {
+    height: 16rem;
+  }
 }
 .header .navbar {
   width: 100%;

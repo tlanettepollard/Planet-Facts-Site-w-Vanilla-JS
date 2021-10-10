@@ -1,7 +1,10 @@
 .header {
-    grid-area: header;
+    //grid-area: header;
     width: 100%;
     border-bottom: 1px solid $color-lt-gray;
+    @media only screen and (min-width: $bp-md) and(max-width: $bp-xl){
+        height: 16rem;
+    }
 
     .navbar {
         width: 100%;
