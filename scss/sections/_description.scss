@@ -3,7 +3,15 @@
     height: 100%;
     @include flex (column, space-between, center);
 
-    
+   .planet-image__container {
+       position: relative;
+
+       .geology-image {
+           //display: none;
+           position: absolute;
+           transform: translateX(5.5rem) translateY(-3rem);
+       }
+   } 
 
     
 }
