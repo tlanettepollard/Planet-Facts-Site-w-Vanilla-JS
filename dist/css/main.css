@@ -143,49 +143,6 @@ h4 {
   justify-content: space-between;
   align-items: center;
 }
-.description .desc-buttons {
-  order: 1;
-}
-@media only screen and (min-width: 992px) {
-  .description .desc-buttons {
-    order: unset;
-  }
-}
-.description .desc-buttons .btn {
-  cursor: pointer;
-}
-.description #top-section-left {
-  order: 2;
-}
-@media only screen and (min-width: 992px) {
-  .description #top-section-left {
-    order: unset;
-  }
-}
-.description #top-section-left .planet-image__container {
-  /* .geology-image {
-       @media only screen and (max-with: 767px){
-           width: 5rem;
-           height: 5.828rem;
-       }
-   }*/
-}
-.description #top-section-right--desc {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  order: 3;
-}
-@media screen and (min-width: 992px) {
-  .description #top-section-right--desc {
-    order: unset;
-  }
-}
-.description #top-section-right--desc .description-text,
-.description #top-section-right--desc .source-link {
-  text-align: center;
-}
 
 .desc-buttons--mobile {
   display: flex;

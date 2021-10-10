@@ -50,7 +50,7 @@ function displayPlanetInfo(planet) {
     radius.innerText = planet.radius;
     temperature.innerText = planet.temperature;
     planetImage.src = planet.images.planet;
-    geologyImage.style.display = 'none';
+    //geologyImage.style.display = 'none';
     
     if (window.innerWidth < 768) {
         planetImage.style.height = planet.size.small;
@@ -107,7 +107,6 @@ function displayPlanetInfo(planet) {
         planetImage.src = planet.images.planet;
         geologyImage.src = planet.images.geology;
         geologyImage.style.display = 'block';
-        geologyImage.style.position = 'absolute';
         overviewBtn.style.backgroundColor = 'transparent';
         structureBtn.style.backgroundColor = 'transparent';
         geologyBtn.style.backgroundColor = `#${planet.color}`;
@@ -116,11 +115,11 @@ function displayPlanetInfo(planet) {
             geologyImage.style.height = planet.geologysize.small.height;
             geologyImage.style.width = planet.geologysize.small.width;
         } else if (window.innerWidth >= 768 && window.innerWidth <= 992) {
-            geologyImage.style.height = planet.geologysize.medium;
-            geologyImage.style.width = planet.geologysize.medium;   
+            geologyImage.style.height = planet.geologysize.medium.height;
+            geologyImage.style.width = planet.geologysize.medium.width;   
         } else {
-            geologyImage.style.height = planet.geologysize.large;
-            geologyImage.style.width = planet.geologysize.large;
+            geologyImage.style.height = planet.geologysize.large.height;
+            geologyImage.style.width = planet.geologysize.large.width;
         }
 
         //Button mobile
