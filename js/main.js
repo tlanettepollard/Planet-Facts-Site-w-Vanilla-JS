@@ -49,18 +49,24 @@ function displayPlanetInfo(planet) {
     revolution.innerText = planet.revolution;
     radius.innerText = planet.radius;
     temperature.innerText = planet.temperature;
-    planetImage.src = planet.images.planet;
+    planetImage.style.background = `url('${planet.images.planet}')`;
+    planetImage.style.backgroundRepeat = 'no-repeat';
+    planetImage.style.backgroundPosition = 'center';
+
     //geologyImage.style.display = 'none';
     
     if (window.innerWidth < 768) {
-        planetImage.style.height = planet.size.small;
-        planetImage.style.width = planet.size.small;
+        planetImage.style.backgroundSize = `${planet.size.small}`, `${planet.size.small}`;
+        planetImage.style.height = `${planet.size.small}`;
+        planetImage.style.width = `${planet.size.small}`;
     } else if (window.innerWidth >= 768 && window.innerWidth <= 992) {
-        planetImage.style.height = planet.size.medium;
-        planetImage.style.width = planet.size.medium;
+        planetImage.style.backgroundSize = `${planet.size.medium}`, `${planet.size.medium}`;
+        planetImage.style.height = `${planet.size.medium}`;
+        planetImage.style.width = `${planet.size.medium}`;
     } else {
-        planetImage.style.height = planet.size.large;
-        planetImage.style.width = planet.size.large;
+        planetImage.style.backgroundSize = `${planet.size.large}`, `${planet.size.large}`;
+        planetImage.style.height = `${planet.size.large}`;
+        planetImage.style.width = `${planet.size.large}`;
     }
 
     overviewBtn.addEventListener('click', () => {
