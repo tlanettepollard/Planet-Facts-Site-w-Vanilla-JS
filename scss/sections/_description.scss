@@ -2,50 +2,11 @@
     grid-area: description;
     height: 100%;
     @include flex (column, space-between, center);
-     
-    .desc-buttons{
-        order: 1;
-        @media only screen and (min-width: $bp-lg) {
-            order: unset;
-        }
-        .btn {
-            cursor: pointer;
-        }
-    }
 
-    #top-section-left {
-        order: 2;
-        @media only screen and (min-width: $bp-lg) {
-            order: unset;
-        }
-        
-        .planet-image__container {
-          /* .geology-image {
-               @media only screen and (max-with: 767px){
-                   width: 5rem;
-                   height: 5.828rem;
-               }
-           }*/
-            
-            
-        }
-    }
-
-    #top-section-right--desc {
-        @include flex (column, center, center);
-        order: 3;
-        @media screen and (min-width: $bp-lg) {
-            order: unset;
-        }
-        .description-text, 
-        .source-link {
-            text-align: center;
-        }
-    }
+    
 
     
 }
-
 
 .desc-buttons--mobile {
     @include flex (row, space-between, center);
