@@ -1,11 +1,14 @@
 .description {
     @include flex (column, center, center);
-    height: 56rem;
-
-    @media only screen and (min-width: $bp-lg) and(max-width: $bp-xl){
+    height: 73rem;
+    @media only screen and (min-width: $bp-md) and (max-width: 1199px){
+        height: 90rem;
+    }
+    @media only screen and (min-width: $bp-xl) {
         @include flex (row, center, center);
         height: 80rem;
     }
+
 
     .top-right__container {
         @media only screen and (min-width: $bp-md) {

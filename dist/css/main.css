@@ -143,9 +143,14 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 56rem;
+  height: 73rem;
 }
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .description {
+    height: 90rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
   .description {
     display: flex;
     flex-direction: row;
