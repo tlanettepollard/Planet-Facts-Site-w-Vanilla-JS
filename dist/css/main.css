@@ -175,6 +175,22 @@ h4 {
     align-items: center;
   }
 }
+.description .planet-image__container {
+  position: relative;
+  margin: auto;
+}
+.description .planet-image__container .planet-image--bottom {
+  margin: auto;
+}
+.description .planet-image__container .planet-image--top {
+  position: absolute;
+  transform: translateX(30px) translateY(-30px);
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .description .planet-image__container .planet-image--top {
+    transform: translateX(55px) translateY(-50px);
+  }
+}
 
 .desc-buttons--mobile {
   height: 5rem;
@@ -187,6 +203,16 @@ h4 {
   .desc-buttons--mobile {
     display: none;
   }
+}
+
+@media only screen and (max-width: 767px) {
+  .desc-buttons--tablet {
+    display: none;
+  }
+}
+
+.geology-image {
+  display: none;
 }
 
 #bottom-section .attribution {

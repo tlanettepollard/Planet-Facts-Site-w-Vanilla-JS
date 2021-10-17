@@ -100,10 +100,14 @@ I've also had a battle with onclick, onClick, and addEventListener. I keep readi
 
 I just saw a Medium article today that I wished I saw when I began this project. It gave 10 signs that you can use to determine if your website needs JavaScript. It was eye-opening and mindblowing! (Well for me it was.) That article points out that many websites are just fine with just CSS and HTML. It doesn't say don't use JS, just use it wisely and sparingly for certain projects. It's also talking about the client-side experience not the server side. It made me realize that I need to determine the amount of JS I use depending on the goal of the site. In this case, since I'm only serving static content and there will be a simple toggle to show information, I don't need to use as much JS to accomplish that task.
 
-I followed aborron as a guide. I added the fetch script to each HTML page. Now I have all of my pages populated with the planet's information. 
+I followed aborron as a guide. I added the fetch script to each HTML page. Now I have all of my pages populated with the planet's information.
 
 Resources:
 
 - [10 Signs Your Website Does Not Need JavaScript](https://betterprogramming.pub/10-signs-your-website-does-not-need-javascript-c1a416cdeee8) by E. Correia
 
 - [Planet Fact Site](https://github.com/aborron/planets-fact-site) by Aborron
+
+### 10/17/2021
+
+I'm back. I did some research to figure out how to overlap the planet image and the geology surface image. One coder placed the images as a background image. I tried to see how it could be done with CSS Grid. I didn't have much luck. So, back to positioning I go.
