@@ -177,26 +177,21 @@ h4 {
 }
 .description .planet-image__container {
   margin: auto;
+  position: relative;
 }
 .description .planet-image__container .planet-image--bottom {
   margin: auto;
-  position: relative;
 }
 .description .planet-image__container .planet-image--top {
   position: absolute;
-  transform: translateX(50px) translateY(-30px);
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .description .planet-image__container .planet-image--top {
-    transform: translateX(55px) translateY(-50px);
-  }
-}
-@media only screen and (min-width: 992px) {
-  .description .planet-image__container .planet-image--top {
-    transform: translateX(65px) translateY(-70px);
-  }
-}
+  top: 70%;
+  right: 30%;
+  z-index: 0;
+  /*@media only screen and (min-width: $bp-md) and (max-width: 991px) {
+      //transform: translateX(55px) translateY(-50px);
 
+  }*/
+}
 .desc-buttons--mobile {
   height: 5rem;
   display: flex;
