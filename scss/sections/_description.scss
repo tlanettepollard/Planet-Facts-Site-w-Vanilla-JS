@@ -1,13 +1,14 @@
 .description {
     @include flex (column, center, center);
-    height: 73rem;
+    margin-top: 7.4rem;
 
     @media only screen and (min-width: $bp-md) and (max-width: 1199px){
-        height: 90rem;
+        margin-top: 11rem;
     }
+
     @media only screen and (min-width: $bp-xl) {
         @include flex (row, center, center);
-        height: 80rem;
+        margin: 12rem 9.4rem;
     }
 
 
@@ -19,17 +20,17 @@
         @media only screen and (min-width: $bp-xl) {
             @include flex (column, space-between, center);
         }
-
         
     }
 
      .description-planet {
-         margin: 2rem 0;
-         padding: 2rem;
+   
+         
      }
 
     .planet-image__container {
-        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
         position: relative;
 
         .planet-image--bottom {
@@ -38,19 +39,11 @@
 
         .planet-image--top {
             position: absolute;
-            //transform: translateX(50px) translateY(-30px);
             top: 70%;
             right: 30%;
             z-index: 0;
 
-            /*@media only screen and (min-width: $bp-md) and (max-width: 991px) {
-                //transform: translateX(55px) translateY(-50px);
 
-            }*/
-
-            @media only screen and (min-width: $bp-lg){
-                //transform: translateX(65px) translateY(-70px);
-            }
             
         }
     }
@@ -60,7 +53,7 @@
 .desc-buttons--mobile {
     height: 5rem;
     padding: 1rem 1.5rem;
-    
+
     @include flex (row, space-between, center);
 
     @media only screen and (min-width: $bp-md){
