@@ -299,6 +299,7 @@ footer .bottom-section__container {
   }
   footer .bottom-section__container .facts .facts-info {
     text-align: right;
+    font-size: 3rem;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -306,11 +307,17 @@ footer .bottom-section__container {
     width: 16.4rem;
     height: 8.8rem;
   }
+  footer .bottom-section__container .facts .facts-info {
+    font-size: 3.25rem;
+  }
 }
 @media only screen and (min-width: 1200px) {
   footer .bottom-section__container .facts {
     width: 25.5rem;
     height: 12.8rem;
+  }
+  footer .bottom-section__container .facts .facts-info {
+    font-size: 4rem;
   }
 }
 @media only screen and (max-width: 767px) {
