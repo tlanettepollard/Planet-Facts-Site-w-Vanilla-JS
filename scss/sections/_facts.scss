@@ -1,8 +1,54 @@
-#bottom-section {
+footer {
+    height: 30rem;
     
 
+    .bottom-section__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 5rem;
+        padding: 2.4rem;
+        
+        @media only screen and (min-width: $bp-md){
+            grid-template-columns: repeat(4, 1fr);
+
+        }
+
+        .facts {
+            @media only screen and (max-width: 767px){
+                @include flex (row, space-between, center);
+                padding: 1.6rem 2.4rem;
+                border: solid 1px $color-lt-gray;
+
+                .facts-title {
+                    text-align: left;
+                }
+
+                .facts-info {
+                    text-align: right;
+                }
+            }
+            @media only screen and (min-width: $bp-md) {
+                width: 16.4rem;
+                height: 8.8rem;
+            }
+
+            @media only screen and (min-width: $bp-xl) {
+                width: 25.5rem;
+                height: 12.8rem;
+            }
+
+        }
+        
+        .facts:not(:last-of-type) {
+            @media only screen and (max-width: 767px) {
+                margin-bottom: .8rem;
+            }
+        }
+    }
+
+
     .attribution {
-        margin-bottom: 0px;
+        bottom: 0;
     }
     
 }

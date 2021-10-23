@@ -1,11 +1,10 @@
 .description {
     @include flex (column, center, center);
-    margin-top: 7.4rem;
+        margin: 0 2.4rem;
     
-    
-
     @media only screen and (min-width: $bp-md) and (max-width: 1199px){
         margin-top: 11rem;
+        margin-bottom: 10rem;
     }
 
     @media only screen and (min-width: $bp-xl) {
@@ -14,26 +13,59 @@
     }
 
 
-    .top-right__container {
+    .top__container {
         @media only screen and (max-width: 767px) {
-            margin-top: 4.5rem;
-            margin-bottom: 4rem;
+          margin: auto;
+          
+           
         }
 
         @media only screen and (min-width: $bp-md) {
-            @include flex (row, space-between, center);
+            display: grid;
+            width: 100%;
+            margin: 0;
+            padding: 0 2.4rem;
+            grid-template-areas: 
+            "info tabs";
+            grid-template-columns: 1fr 1fr;
         }
 
         @media only screen and (min-width: $bp-xl) {
             @include flex (column, space-between, center);
         }
+
+        .description-planet {
+            @media only screen and (max-width: 767px) {
+                @include flex (column, space-between, center);
+                margin: auto;
+                height: 100%;
+            }
+
+            @media only screen and (min-width: $bp-md){
+                grid-area: info;
+            }
+
+            .planet-title,
+            .planet-text {
+                text-align: center;
+            }
+
+            .planet-title {
+               margin-bottom: 1.6rem;
+
+            }
+
+            .planet-text {
+                margin-bottom: 3.6rem;
+            }
+
+            .body-text {
+                margin-bottom: 2.8rem;
+            }
+        }
         
     }
 
-     .description-planet {
-   
-         
-     }
 
     .planet-image__container {
         margin-top: 3rem;
@@ -49,18 +81,16 @@
             top: 70%;
             right: 30%;
             z-index: 0;
-
-
-            
+  
         }
     }
     
 }
 
 .desc-buttons--mobile {
-    height: 5rem;
-    padding: 1rem 1.5rem;
-
+    height: max-content;
+    padding: 0 2.4rem;
+    border-bottom: solid 1px $color-lt-gray;
     @include flex (row, space-between, center);
 
     @media only screen and (min-width: $bp-md){
@@ -73,7 +103,33 @@
     @media only screen and (max-width: 767px) {
         display: none;
     }
+
+    @media only screen and (min-width: $bp-md) {
+        grid-area: tabs;
+        flex-direction: column;
+        justify-content: center;
+        border: none;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+         @include flex (column, center, center);
+    }
+    .btn-tablet {
+        @media only screen and (min-width: $bp-md) {
+            width: 28rem;
+            height: 4rem;
+        }
+    }
+
+    .btn-tablet:not(:last-of-type) {
+        @media only screen and (min-width: $bp-md){
+            margin-bottom: 1.6rem;
+        }
+    }
+
 }
+
+
 
 .geology-image {
     display: none;

@@ -22,8 +22,8 @@ body {
     background-repeat: repeat;
     background-size: 60%;
     background-position: center;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     color: $color-white;
 }
 
@@ -38,8 +38,8 @@ li {
 }
 
 .wrapper {
-    max-width: 148rem;
-    height: 100%;
+    max-width: 100vw;
+    height: 100vh;
     overflow-x: hidden;
     margin: auto;
     position: relative;
@@ -47,16 +47,8 @@ li {
 
 .main {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     
-    /*display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 2rem;
-    grid-template-areas: 
-    "header"
-    "description"
-    "facts";*/
 }
 
 .btn {

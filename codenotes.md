@@ -115,4 +115,4 @@ I'm back. I did some research to figure out how to overlap the planet image and 
 
 ### 10/23/2021
 
-Finally back to working on my project. Now I'm trying to style my pages. 
+Finally back to working on my project. Now I'm trying to style my pages. I'm using a mix of flex and grid on some of my page sections. 
