@@ -2,12 +2,14 @@
     //grid-area: header;
     width: 100%;
     border-bottom: 1px solid $color-lt-gray;
+
     @media only screen and (min-width: $bp-md) and(max-width: $bp-xl){
         height: 16rem;
     }
 
     .navbar {
         width: 100%;
+        padding: 1rem 1.5rem;
         @media only screen and (min-width: $bp-xl) {
             @include flex(row, space-between, center);
         }
@@ -39,6 +41,8 @@
         &__menu {
             width: 100%;
             background-color: transparent;
+            padding: 1rem 1.5rem;
+            
             @media only screen and (max-width: 767px){
                 background-color: $color-dk-blue;
                 position: fixed;

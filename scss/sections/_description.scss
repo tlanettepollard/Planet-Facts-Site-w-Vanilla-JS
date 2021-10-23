@@ -1,6 +1,7 @@
 .description {
     @include flex (column, center, center);
     height: 73rem;
+
     @media only screen and (min-width: $bp-md) and (max-width: 1199px){
         height: 90rem;
     }
@@ -18,7 +19,14 @@
         @media only screen and (min-width: $bp-xl) {
             @include flex (column, space-between, center);
         }
+
+        
     }
+
+     .description-planet {
+         margin: 2rem 0;
+         padding: 2rem;
+     }
 
     .planet-image__container {
         margin: auto;
@@ -51,6 +59,8 @@
 
 .desc-buttons--mobile {
     height: 5rem;
+    padding: 1rem 1.5rem;
+    
     @include flex (row, space-between, center);
 
     @media only screen and (min-width: $bp-md){
