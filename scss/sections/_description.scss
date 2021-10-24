@@ -150,9 +150,17 @@
         }
     }
 
+    .mercury > .button-selected, 
+    .mercury > .button-selected:hover {
+        background-color: $mercury;
+    }
+
 }
 
 
 .geology-image {
     display: none;
 }
+
+
+
