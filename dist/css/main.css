@@ -287,13 +287,73 @@ h4 {
     margin-bottom: 1.6rem;
   }
 }
-.desc-buttons--tablet .mercury > .button-selected,
-.desc-buttons--tablet .mercury > .button-selected:hover {
-  background-color: #419ebb;
-}
 
 .geology-image {
   display: none;
+}
+
+.mercury > .btn-overview--mobile {
+  border-bottom: 4px solid #419ebb;
+}
+
+.venus > .btn-overview--mobile {
+  border-bottom: 4px solid #eda249;
+}
+
+.mars > .btn-overview--mobile {
+  border-bottom: 4px solid #d14c32;
+}
+
+.uranus > .btn-overview--mobile {
+  border-bottom: 4px solid #1ec2a4;
+}
+
+.saturn > .btn-overview--mobile {
+  border-bottom: 4px solid #cd5120;
+}
+
+.neptune > .btn-overview--mobile {
+  border-bottom: 4px solid #2d68f0;
+}
+
+.jupiter > .btn-overview--mobile {
+  border-bottom: 4px solid #d83a34;
+}
+
+.earth > .btn-overview--mobile {
+  border-bottom: 4px solid #6f2ed6;
+}
+
+.mercury > .btn-overview {
+  background-color: #419ebb;
+}
+
+.venus > .btn-overview {
+  background-color: #eda249;
+}
+
+.mars > .btn-overview {
+  background-color: #d14c32;
+}
+
+.uranus > .btn-overview {
+  background-color: #1ec2a4;
+}
+
+.saturn > .btn-overview {
+  background-color: #cd5120;
+}
+
+.neptune > .btn-overview {
+  background-color: #2d68f0;
+}
+
+.jupiter > .btn-overview {
+  background-color: #d83a34;
+}
+
+.earth > .btn-overview {
+  background-color: #6f2ed6;
 }
 
 footer {
