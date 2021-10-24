@@ -29,8 +29,9 @@
 
             .hamburger-btn {
                 cursor: pointer;
-                outline: none;
                 padding: .2rem;
+                opacity: 1;
+
                 @media only screen and (min-width: $bp-md) {
                     display: none;
                 }
@@ -48,10 +49,14 @@
 
             @media only screen and (max-width: 767px){
                 background-color: $color-dk-blue;
+                padding: 2.4rem 2.4rem;
                 position: fixed;
                 left: -100%;
+                height: calc(100vh - 69px);
+                overflow-y: scroll;
                 transition: 0.5s;
                 z-index: 2;
+                
             }
            
 
@@ -88,10 +93,7 @@
                 }
                 
 
-
             }
-
-            
 
         }
 
