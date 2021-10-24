@@ -257,8 +257,12 @@ h4 {
 }
 @media only screen and (min-width: 768px) {
   .desc-buttons--tablet .btn-tablet {
+    cursor: pointer;
     width: 28rem;
     height: 4rem;
+  }
+  .desc-buttons--tablet .btn-tablet:hover {
+    background-color: #38384f;
   }
 }
 @media only screen and (min-width: 768px) {

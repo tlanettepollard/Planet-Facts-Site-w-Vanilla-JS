@@ -16,7 +16,6 @@
     .top__container {
         @media only screen and (max-width: 767px) {
           margin: auto;
-          
            
         }
 
@@ -99,7 +98,6 @@
 }
 
 .desc-buttons--tablet {
-
     @media only screen and (max-width: 767px) {
         display: none;
     }
@@ -116,8 +114,13 @@
     }
     .btn-tablet {
         @media only screen and (min-width: $bp-md) {
+            cursor: pointer;
             width: 28rem;
             height: 4rem;
+
+            &:hover {
+                background-color: $color-dk-gray;
+            }
         }
     }
 
@@ -128,7 +131,6 @@
     }
 
 }
-
 
 
 .geology-image {
