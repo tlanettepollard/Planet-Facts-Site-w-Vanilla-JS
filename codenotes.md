@@ -112,7 +112,10 @@ Resources:
 
 I'm back. I did some research to figure out how to overlap the planet image and the geology surface image. One coder placed the images as a background image. I tried to see how it could be done with CSS Grid. I didn't have much luck. So, back to positioning I go.
 
-
 ### 10/23/2021
 
-Finally back to working on my project. Now I'm trying to style my pages. I'm using a mix of flex and grid on some of my page sections. 
+Finally back to working on my project. Now I'm trying to style my pages. I'm using a mix of flex and grid on some of my page sections.
+
+### 10/24/2021
+
+I made some progress today. I used CSS to set the buttons to the planet color on page load. So far it's worked out well.
