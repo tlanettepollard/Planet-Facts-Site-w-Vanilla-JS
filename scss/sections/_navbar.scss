@@ -4,7 +4,8 @@
     border-bottom: 1px solid $color-lt-gray;
 
     @media only screen and (min-width: $bp-md) and(max-width: $bp-xl){
-        height: 20rem;
+        height: 25rem;
+        padding-top: 5rem;
     }
 
     .navbar {
@@ -28,6 +29,7 @@
 
             .hamburger-btn {
                 cursor: pointer;
+                outline: none;
                 padding: .2rem;
                 @media only screen and (min-width: $bp-md) {
                     display: none;
@@ -149,6 +151,7 @@
         text-decoration: none;
         color: $color-white;
         margin: 0;
+        text-transform: uppercase;
     }
 
 }
