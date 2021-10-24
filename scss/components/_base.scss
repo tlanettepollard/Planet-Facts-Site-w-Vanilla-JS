@@ -23,7 +23,7 @@ body {
     background-size: 60%;
     background-position: center;
     width: 100vw;
-    height: 100vh;
+    min-height: 100%;
     color: $color-white;
 }
 
@@ -39,7 +39,8 @@ li {
 
 .wrapper {
     max-width: 100vw;
-    height: 100vh;
+    //height: 100vh;
+    min-height: 100vh;
     overflow-x: hidden;
     margin: auto;
     position: relative;
@@ -48,6 +49,7 @@ li {
 .main {
     width: 100%;
     height: 100vh;
+    padding-bottom: 30rem;
     
 }
 

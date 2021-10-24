@@ -1,6 +1,6 @@
 .description {
     @include flex (column, center, center);
-        margin: 0 2.4rem;
+        margin: 3rem 2.4rem;
     
     @media only screen and (min-width: $bp-md) and (max-width: 1199px){
         margin-top: 11rem;
@@ -15,14 +15,14 @@
 
     .top__container {
         @media only screen and (max-width: 767px) {
-          margin: auto;
+          margin: 5rem 0 ;
            
         }
 
         @media only screen and (min-width: $bp-md) {
             display: grid;
             width: 100%;
-            margin: 0;
+            margin-top: 3rem;
             padding: 0 2.4rem;
             grid-template-areas: 
             "info tabs";
@@ -37,38 +37,44 @@
             @media only screen and (max-width: 767px) {
                 @include flex (column, space-between, center);
                 margin: auto;
-                height: 100%;
+                height: auto;
+
+                .planet-title,
+                .planet-text {
+                    text-align: center;
+                }
+
+                .planet-title {
+                    margin-bottom: 2rem;
+
+                }
+
+                .planet-text {
+                    margin-bottom: 3.6rem;
+                }
+
+                .body-text {
+                    margin-bottom: 2.8rem;
+                }
             }
 
             @media only screen and (min-width: $bp-md){
                 grid-area: info;
+                
+                .planet-title, 
+                .planet-text {
+                    text-align: left;
+                }
             }
 
-            .planet-title,
-            .planet-text {
-                text-align: center;
-            }
-
-            .planet-title {
-               margin-bottom: 1.6rem;
-
-            }
-
-            .planet-text {
-                margin-bottom: 3.6rem;
-            }
-
-            .body-text {
-                margin-bottom: 2.8rem;
-            }
+            
         }
         
     }
 
 
     .planet-image__container {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+        margin: 4rem 0;
         position: relative;
 
         .planet-image--bottom {
@@ -87,13 +93,18 @@
 }
 
 .desc-buttons--mobile {
-    height: max-content;
+    height: 5rem;
     padding: 0 2.4rem;
     border-bottom: solid 1px $color-lt-gray;
     @include flex (row, space-between, center);
 
     @media only screen and (min-width: $bp-md){
         display: none;
+    }
+
+    .btn-mobile {
+        border: none;
+        outline: none;
     }
 }
 
@@ -115,11 +126,20 @@
     .btn-tablet {
         @media only screen and (min-width: $bp-md) {
             cursor: pointer;
-            width: 28rem;
-            height: 4rem;
-
+            width: 30rem;
+            height: 6rem;
+            margin: 2rem 0;
+            padding-left: 2rem;
+            border: none;
+            text-align: left;
+            text-transform: uppercase;
+            outline: 0.5px solid $color-lt-gray;
             &:hover {
                 background-color: $color-dk-gray;
+            }
+
+            .span-number {
+                margin-right: 1.7rem;
             }
         }
     }
@@ -132,7 +152,59 @@
 
 }
 
-
 .geology-image {
     display: none;
 }
+
+// Mobile Buttons--On page load
+.mercury > .btn-overview--mobile {
+    border-bottom: 4px solid $mercury;
+}
+.venus>.btn-overview--mobile {
+    border-bottom: 4px solid $venus;
+}
+.mars>.btn-overview--mobile {
+    border-bottom: 4px solid $mars;
+}
+.uranus>.btn-overview--mobile {
+    border-bottom: 4px solid $uranus;
+}
+.saturn>.btn-overview--mobile {
+    border-bottom: 4px solid $saturn;
+}
+.neptune>.btn-overview--mobile {
+    border-bottom: 4px solid $neptune;
+}
+.jupiter>.btn-overview--mobile {
+    border-bottom: 4px solid $jupiter;
+}
+.earth>.btn-overview--mobile {
+    border-bottom: 4px solid $earth;
+}
+
+// Tablet Buttons--on page load
+.mercury>.btn-overview {
+    background-color: $mercury;
+}
+.venus>.btn-overview {
+    background-color: $venus;
+}
+.mars>.btn-overview {
+    background-color: $mars;
+}
+.uranus>.btn-overview {
+    background-color: $uranus;
+}
+.saturn>.btn-overview {
+    background-color: $saturn;
+}
+.neptune>.btn-overview {
+    background-color: $neptune;
+}
+.jupiter>.btn-overview {
+    background-color: $jupiter;
+}
+.earth>.btn-overview {
+    background-color: $earth;
+}
+
