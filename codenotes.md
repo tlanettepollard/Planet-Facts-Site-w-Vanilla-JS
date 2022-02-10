@@ -119,3 +119,7 @@ Finally back to working on my project. Now I'm trying to style my pages. I'm usi
 ### 10/24/2021
 
 I made some progress today. I used CSS to set the buttons to the planet color on page load. So far it's worked out well.
+
+### 02/05/2022
+
+It's been a while but I am back.
